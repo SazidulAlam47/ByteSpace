@@ -11,7 +11,7 @@ import {
 export default function HeroSection() {
     return (
         <>
-            <section className="relative bg-[#0043FF] min-h-[1024px] overflow-hidden">
+            <section className="relative bg-[#0043FF] overflow-hidden">
                 <div className="absolute inset-0 opacity-10">
                     <div
                         className="absolute top-0 left-0 w-full h-full"
@@ -43,7 +43,7 @@ export default function HeroSection() {
                 />
 
                 <div className="relative z-10 max-w-[1200px] mx-auto px-8">
-                    <div className="pt-[80px] pb-[100px]">
+                    <div className="pt-[80px] pb-0">
                         <div className="max-w-3xl mx-auto text-center">
                             <h1
                                 className="text-white font-bold mb-6"
