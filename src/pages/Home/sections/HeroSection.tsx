@@ -28,7 +28,7 @@ export default function HeroSection() {
     <>
       {/* Hero Section */}
       <section className="relative bg-[#0043FF] min-h-[1024px] overflow-hidden">
-        <Header />
+        
         {/* Background Grid Pattern */}
         <div className="absolute inset-0 opacity-10">
           <div

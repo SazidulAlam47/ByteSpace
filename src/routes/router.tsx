@@ -1,4 +1,4 @@
-import { createBrowserRouter } from "react-router";
+import { createBrowserRouter, Outlet } from "react-router";
 import MainLayout from "../layouts/MainLayout";
 import Home from "../pages/Home/Home";
 import Login from "../pages/Login/Login";
@@ -12,13 +12,10 @@ import NotFound from "../pages/NotFound/NotFound";
 
 const router = createBrowserRouter([
     {
-        path: "/",
         element: <MainLayout />,
         errorElement: <NotFound />,
         children: [
             { path: "/", element: <Home /> },
-            { path: "/login", element: <Login /> },
-            { path: "/register", element: <Register /> },
             { path: "/course/details", element: <CourseDetails /> },
             { path: "/course/lessons", element: <CourseLessons /> },
             { path: "/course/reviews", element: <CourseReviews /> },
@@ -26,6 +23,14 @@ const router = createBrowserRouter([
             { path: "/search", element: <SearchPage /> },
         ],
     },
+    {
+        // Standalone layout for auth pages
+        element: <div className="min-h-screen bg-[#0E1116]"><Outlet /></div>,
+        children: [
+            { path: "/login", element: <Login /> },
+            { path: "/register", element: <Register /> },
+        ]
+    }
 ]);
 
 export default router;

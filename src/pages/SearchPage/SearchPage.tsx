@@ -17,7 +17,7 @@ export default function SearchPage() {
     <div className="min-h-screen bg-white">
       {/* Search Hero Section */}
       <section className="bg-[#0043FF] pb-16">
-        <Header />
+        
         <div className="pt-8 max-w-[1200px] mx-auto px-8">
           <h1
             className="text-white font-bold mb-8 text-center"

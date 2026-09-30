@@ -7,7 +7,7 @@ export default function CourseDetails() {
     <div className="min-h-screen bg-white">
       {/* Course Hero Section */}
       <section className="bg-[#0043FF] pb-16">
-        <Header />
+        
         <div className="pt-8 max-w-[1200px] mx-auto px-8">
           <div className="max-w-3xl">
             <h1

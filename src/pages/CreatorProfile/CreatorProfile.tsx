@@ -17,7 +17,7 @@ export default function CreatorProfile() {
     <div className="min-h-screen bg-white">
       {/* Creator Hero Section */}
       <section className="bg-[#0043FF] pb-24">
-        <Header />
+        
         <div className="pt-8 max-w-[1200px] mx-auto px-8">
           <div className="flex items-start gap-8">
             <img
