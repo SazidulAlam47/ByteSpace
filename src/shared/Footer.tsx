@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router';
 import { bytespace_logo } from "../assets";
 
-export default function Footer() {
+const Footer = () => {
   return (
     <>
       <footer className="bg-white py-16 border-t border-gray-200">
@@ -141,3 +141,5 @@ export default function Footer() {
     </>
   );
 }
+
+export default Footer;

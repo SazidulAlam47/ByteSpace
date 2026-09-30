@@ -1,17 +1,17 @@
 import React from 'react';
-import { Link } from 'react-router';
+
 import { avatar_2_b44979e1, avatar_3_3fe55918 } from '../assets';
 
 import type { CourseCardProps } from '../types/home.type';
 
-export default function CourseCard({
+const CourseCard = ({
   image,
   title,
   instructor,
   level,
   rating,
   price,
-}: CourseCardProps) {
+}: CourseCardProps) => {
   return (
     <div className="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow relative">
       <img src={image} alt={title} className="w-full h-48 object-cover" />
@@ -51,3 +51,5 @@ export default function CourseCard({
     </div>
   );
 }
+
+export default CourseCard;

@@ -1,17 +1,7 @@
-import { Link } from "react-router";
-import Header from "../../shared/Header";
-import {
-  avatar_2_b44979e1,
-  avatar_3_3fe55918,
-  frame_516,
-  frame_542,
-  frame_568,
-  frame_594,
-  frame_620,
-  frame_646,
-} from "../../assets";
+import { Link } from 'react-router';
+import { avatar_2_b44979e1, avatar_3_3fe55918, frame_516, frame_542, frame_568, frame_594, frame_620, frame_646 } from '../../assets';
 
-export default function CreatorProfile() {
+const CreatorProfile = () => {
   return (
     <div className="min-h-screen bg-white">
       <section className="bg-[#0043FF] pb-24">
@@ -231,3 +221,5 @@ export default function CreatorProfile() {
     </div>
   );
 }
+
+export default CreatorProfile;

@@ -8,7 +8,7 @@ import {
     cone_01_2,
 } from "../../../assets";
 
-export default function HeroSection() {
+const HeroSection = () => {
     return (
         <>
             <section className="relative bg-[#0043FF] overflow-hidden">
@@ -215,3 +215,5 @@ export default function HeroSection() {
         </>
     );
 }
+
+export default HeroSection;

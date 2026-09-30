@@ -1,9 +1,9 @@
 import React from 'react';
-import { Link } from 'react-router';
-import CourseCard from "../../../components/CourseCard";
-import { COURSES } from "../../../constants/home.constant";
 
-export default function DiscoverSection() {
+import CourseCard from "../../../components/CourseCard";
+import { COURSES } from '../../../constants/home.constant';
+
+const DiscoverSection = () => {
 
   return (
     <section className="py-20 bg-white border-b border-gray-100">
@@ -59,3 +59,5 @@ export default function DiscoverSection() {
     </section>
   );
 }
+
+export default DiscoverSection;

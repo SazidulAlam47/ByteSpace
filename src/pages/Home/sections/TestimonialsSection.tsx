@@ -2,7 +2,7 @@ import React from 'react';
 import TestimonialCard from "../../../components/TestimonialCard";
 import { TESTIMONIALS } from "../../../constants/home.constant";
 
-export default function TestimonialsSection() {
+const TestimonialsSection = () => {
 
   return (
     <section className="py-20 bg-[#F9FAFB]">
@@ -29,3 +29,5 @@ export default function TestimonialsSection() {
     </section>
   );
 }
+
+export default TestimonialsSection;

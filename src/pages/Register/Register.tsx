@@ -1,7 +1,7 @@
 import { Link } from "react-router";
 import { bytespace_logo, frame_209, frame_235, cone_01_1, cone_01_2 } from "../../assets";
 
-export default function Register() {
+const Register = () => {
   return (
     <div className="min-h-screen bg-[#0043FF] relative overflow-hidden">
       <div className="absolute inset-0 opacity-10">
@@ -123,3 +123,5 @@ export default function Register() {
     </div>
   );
 }
+
+export default Register;

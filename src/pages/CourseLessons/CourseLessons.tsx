@@ -1,8 +1,7 @@
-import { Link } from "react-router";
-import Header from "../../shared/Header";
-import { avatar_2_b44979e1, frame_542 } from "../../assets";
+import { Link } from 'react-router';
+import { avatar_2_b44979e1, frame_542 } from '../../assets';
 
-export default function CourseLessons() {
+const CourseLessons = () => {
   return (
     <div className="min-h-screen bg-white">
       <section className="bg-[#0043FF] pb-16">
@@ -339,3 +338,5 @@ export default function CourseLessons() {
     </div>
   );
 }
+
+export default CourseLessons;

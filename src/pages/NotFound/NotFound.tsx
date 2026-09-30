@@ -3,7 +3,7 @@ import { Link } from 'react-router';
 import Header from "../../shared/Header";
 import Footer from "../../shared/Footer";
 
-export default function NotFound() {
+const NotFound = () => {
   return (
     <div className="min-h-screen flex flex-col bg-[#0043FF]">
       <Header />
@@ -45,3 +45,5 @@ export default function NotFound() {
     </div>
   );
 }
+
+export default NotFound;

@@ -2,7 +2,7 @@ import React from 'react';
 import CategoryCard from "../../../components/CategoryCard";
 import { CATEGORIES } from "../../../constants/home.constant";
 
-export default function CategoriesSection() {
+const CategoriesSection = () => {
 
   return (
     <section className="py-20 bg-[#F9FAFB]">
@@ -44,3 +44,5 @@ export default function CategoriesSection() {
     </section>
   );
 }
+
+export default CategoriesSection;

@@ -7,7 +7,7 @@ import InstructorSection from "./sections/InstructorSection";
 import CTASection from "./sections/CTASection";
 import TestimonialsSection from "./sections/TestimonialsSection";
 
-export default function Home() {
+const Home = () => {
     return (
         <div className="relative min-h-screen bg-white">
             <HeroSection />
@@ -21,3 +21,5 @@ export default function Home() {
         </div>
     );
 }
+
+export default Home;

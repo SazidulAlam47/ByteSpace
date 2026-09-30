@@ -1,8 +1,7 @@
-import { Link } from "react-router";
-import Header from "../../shared/Header";
-import { avatar_2_b44979e1, avatar_3_3fe55918, avatar_4_0577f0e9, avatar_5_d0cd3adb, frame_542 } from "../../assets";
+import { Link } from 'react-router';
+import { avatar_2_b44979e1, avatar_3_3fe55918, avatar_4_0577f0e9, avatar_5_d0cd3adb, frame_542 } from '../../assets';
 
-export default function CourseReviews() {
+const CourseReviews = () => {
   return (
     <div className="min-h-screen bg-white">
       <section className="bg-[#0043FF] pb-16">
@@ -379,3 +378,5 @@ export default function CourseReviews() {
     </div>
   );
 }
+
+export default CourseReviews;

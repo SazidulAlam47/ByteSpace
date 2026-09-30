@@ -2,7 +2,7 @@ import React from 'react';
 
 import type { TestimonialCardProps } from '../types/home.type';
 
-export default function TestimonialCard({ avatar, name, role, content }: TestimonialCardProps) {
+const TestimonialCard = ({ avatar, name, role, content }: TestimonialCardProps) => {
   return (
     <div className="bg-white rounded-2xl p-8 shadow-lg">
       <div className="flex items-center gap-4 mb-6">
@@ -22,3 +22,5 @@ export default function TestimonialCard({ avatar, name, role, content }: Testimo
     </div>
   );
 }
+
+export default TestimonialCard;

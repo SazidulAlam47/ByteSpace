@@ -1,7 +1,7 @@
 import { Link } from "react-router";
 import { bytespace_logo, frame_69, frame_95, avatar_2_b44979e1, avatar_3_3fe55918, avatar_4_0577f0e9, cone_01_1, cone_01_2 } from "../../assets";
 
-export default function Login() {
+const Login = () => {
   return (
     <div className="min-h-screen bg-[#0043FF] relative overflow-hidden">
       <div className="absolute inset-0 opacity-10">
@@ -163,3 +163,5 @@ export default function Login() {
     </div>
   );
 }
+
+export default Login;
