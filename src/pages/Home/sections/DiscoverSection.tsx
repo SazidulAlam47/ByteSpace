@@ -25,18 +25,16 @@ const DiscoverSection = () => {
           </p>
         </div>
 
-        <div className="flex flex-wrap items-center justify-between gap-4 mb-12 border-b border-gray-200 pb-4">
-          <div className="flex gap-8 overflow-x-auto pb-2 -mb-[18px]">
-            {['All', 'Design', 'Development', 'IT & Business'].map((tab, idx) => (
-              <button
-                key={idx}
-                className={`pb-4 font-medium whitespace-nowrap ${idx === 0 ? 'text-[#0043FF] border-b-2 border-[#0043FF]' : 'text-gray-500 hover:text-black'}`}
-                style={{ fontFamily: '"Satoshi", sans-serif' }}
-              >
-                {tab}
-              </button>
-            ))}
-          </div>
+        <div className="flex flex-wrap justify-center gap-3 mb-12">
+          {['All', 'Design', 'Development', 'IT & Business'].map((tab, idx) => (
+            <button
+              key={idx}
+              className={`px-6 py-3 font-medium rounded-full transition-colors ${idx === 0 ? 'bg-[#CBFC01] text-black' : 'bg-gray-100 text-gray-700 hover:bg-gray-200'}`}
+              style={{ fontFamily: '"Satoshi", sans-serif' }}
+            >
+              {tab}
+            </button>
+          ))}
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
