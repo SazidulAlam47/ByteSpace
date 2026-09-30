@@ -1,15 +1,14 @@
 import { Link } from "react-router";
 import Header from "../../shared/Header";
-import { avatar_2_b44979e1, avatar_3_3fe55918, avatar_4_0577f0e9, avatar_5_d0cd3adb, image_33_29a52a24 } from "../../assets";
+import { avatar_2_b44979e1, avatar_3_3fe55918, avatar_4_0577f0e9, avatar_5_d0cd3adb, frame_542 } from "../../assets";
 
 export default function CourseReviews() {
   return (
     <div className="min-h-screen bg-white">
-      <Header />
-
       {/* Course Hero Section */}
-      <section className="bg-[#0E52FF] pt-32 pb-16">
-        <div className="max-w-[1200px] mx-auto px-8">
+      <section className="bg-[#0043FF] pb-16">
+        <Header />
+        <div className="pt-8 max-w-[1200px] mx-auto px-8">
           <div className="max-w-3xl">
             <h1
               className="text-white font-bold mb-4"
@@ -56,7 +55,7 @@ export default function CourseReviews() {
               {/* Video Preview */}
               <div className="mb-8 rounded-3xl overflow-hidden bg-gray-100 relative aspect-video">
                 <img
-                  src={image_33_29a52a24}
+                  src={frame_542}
                   alt="Course preview"
                   className="w-full h-full object-cover"
                 />
@@ -312,7 +311,7 @@ export default function CourseReviews() {
 
                 <div className="mb-6">
                   <div
-                    className="text-4xl font-bold text-[#0E52FF] mb-4"
+                    className="text-4xl font-bold text-[#0043FF] mb-4"
                     style={{ fontFamily: '"Clash Display", sans-serif' }}
                   >
                     $25<span className="text-lg font-normal text-gray-500">/lifetime</span>

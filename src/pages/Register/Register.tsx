@@ -1,9 +1,9 @@
 import { Link } from "react-router";
-import { bytespace_logo } from "../../assets";
+import { bytespace_logo, frame_209, frame_235, cone_01_1, cone_01_2 } from "../../assets";
 
 export default function Register() {
   return (
-    <div className="min-h-screen bg-[#0E52FF] relative overflow-hidden">
+    <div className="min-h-screen bg-[#0043FF] relative overflow-hidden">
       {/* Background Grid Pattern */}
       <div className="absolute inset-0 opacity-10">
         <div className="absolute top-0 left-0 w-full h-full"
@@ -13,6 +13,10 @@ export default function Register() {
              }}>
         </div>
       </div>
+
+      {/* Decorative Cones */}
+      <img src={cone_01_1} alt="" className="absolute top-[10%] right-[60%] w-[120px] opacity-80 z-0 pointer-events-none" />
+      <img src={cone_01_2} alt="" className="absolute bottom-[20%] left-[5%] w-[100px] opacity-80 z-0 pointer-events-none" />
 
       {/* Logo */}
       <div className="absolute top-8 left-8 z-50 flex items-center gap-2">
@@ -41,26 +45,9 @@ export default function Register() {
             {/* Course Cards Preview */}
             <div className="relative">
               {/* Decorative course card mockups */}
-              <div className="space-y-4">
-                <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-4 border border-white/20">
-                  <div className="flex items-center gap-3 mb-2">
-                    <div className="w-10 h-10 bg-[#CBFC01] rounded-lg flex items-center justify-center">
-                      <span className="text-xl">📊</span>
-                    </div>
-                    <div>
-                      <p className="text-white font-semibold text-sm" style={{ fontFamily: '"Satoshi", sans-serif' }}>
-                        the Power of Big Data
-                      </p>
-                      <p className="text-white/60 text-xs" style={{ fontFamily: '"Satoshi", sans-serif' }}>
-                        by purepearl studio
-                      </p>
-                    </div>
-                  </div>
-                  <div className="flex items-center gap-4 text-xs text-white/80">
-                    <span style={{ fontFamily: '"Satoshi", sans-serif' }}>📈 Beginner</span>
-                    <span style={{ fontFamily: '"Satoshi", sans-serif' }}>4.5 ⭐</span>
-                  </div>
-                </div>
+              <div className="space-y-6">
+                <img src={frame_209} alt="Course Preview" className="w-[300px] rounded-2xl shadow-xl transform -rotate-6 z-10 relative" />
+                <img src={frame_235} alt="Course Preview" className="w-[300px] rounded-2xl shadow-xl transform rotate-3 ml-12 z-0 relative -mt-16" />
               </div>
             </div>
           </div>
@@ -69,7 +56,7 @@ export default function Register() {
           <div className="flex-1 max-w-md w-full">
             <div className="bg-white rounded-3xl p-8 shadow-2xl">
               <div className="mb-8">
-                <p className="text-[#0E52FF] text-sm font-medium mb-2" style={{ fontFamily: '"Satoshi", sans-serif' }}>
+                <p className="text-[#0043FF] text-sm font-medium mb-2" style={{ fontFamily: '"Satoshi", sans-serif' }}>
                   Create an Account
                 </p>
                 <h1 className="text-[#0E1116] font-bold"
@@ -89,7 +76,7 @@ export default function Register() {
                     type="text"
                     id="name"
                     placeholder="Jamie Davis"
-                    className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-[#0E52FF] focus:border-transparent"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-[#0043FF] focus:border-transparent"
                     style={{ fontFamily: '"Satoshi", sans-serif' }}
                   />
                 </div>
@@ -104,7 +91,7 @@ export default function Register() {
                     type="email"
                     id="email"
                     placeholder="designer@example.com"
-                    className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-[#0E52FF] focus:border-transparent"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-[#0043FF] focus:border-transparent"
                     style={{ fontFamily: '"Satoshi", sans-serif' }}
                   />
                 </div>
@@ -119,7 +106,7 @@ export default function Register() {
                     type="password"
                     id="password"
                     placeholder="••••••••"
-                    className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-[#0E52FF] focus:border-transparent"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-[#0043FF] focus:border-transparent"
                     style={{ fontFamily: '"Satoshi", sans-serif' }}
                   />
                 </div>
@@ -136,7 +123,7 @@ export default function Register() {
                 {/* Sign In Link */}
                 <p className="text-center text-sm text-gray-600" style={{ fontFamily: '"Satoshi", sans-serif' }}>
                   Already have an account?{" "}
-                  <Link to="/login" className="text-[#0E52FF] font-medium hover:underline">
+                  <Link to="/login" className="text-[#0043FF] font-medium hover:underline">
                     Login
                   </Link>
                 </p>

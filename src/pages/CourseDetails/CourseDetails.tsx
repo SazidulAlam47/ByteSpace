@@ -1,15 +1,14 @@
 import { Link } from "react-router";
 import Header from "../../shared/Header";
-import { avatar_2_b44979e1, image_33_29a52a24 } from "../../assets";
+import { avatar_2_b44979e1, frame_542 } from "../../assets";
 
 export default function CourseDetails() {
   return (
     <div className="min-h-screen bg-white">
-      <Header />
-
       {/* Course Hero Section */}
-      <section className="bg-[#0E52FF] pt-32 pb-16">
-        <div className="max-w-[1200px] mx-auto px-8">
+      <section className="bg-[#0043FF] pb-16">
+        <Header />
+        <div className="pt-8 max-w-[1200px] mx-auto px-8">
           <div className="max-w-3xl">
             <h1
               className="text-white font-bold mb-4"
@@ -56,7 +55,7 @@ export default function CourseDetails() {
               {/* Video Preview */}
               <div className="mb-8 rounded-3xl overflow-hidden bg-gray-100 relative aspect-video">
                 <img
-                  src={image_33_29a52a24}
+                  src={frame_542}
                   alt="Course preview"
                   className="w-full h-full object-cover"
                 />
@@ -140,7 +139,7 @@ export default function CourseDetails() {
                   {[1, 2, 3, 4].map((i) => (
                     <div key={i} className="aspect-square bg-gray-200 rounded-xl overflow-hidden">
                       <img
-                        src={image_33_29a52a24}
+                        src={frame_542}
                         alt={`Preview ${i}`}
                         className="w-full h-full object-cover"
                       />

@@ -1,25 +1,31 @@
 import { Link } from "react-router";
 import {
   bytespace_logo,
-  course_thumb_1_c8826419,
-  course_thumb_20_93ad9f9e,
-  course_thumb_21_72e18d90,
-  course_thumb_22_a8978945,
-  course_thumb_23_69362b02,
-  course_thumb_24_a7c9406f,
   avatar_2_b44979e1,
   avatar_3_3fe55918,
   avatar_4_0577f0e9,
-  image_13_e3b55902,
   image_16_6be36b89,
   image_17_d5e9c4dc,
+  image_13_e3b55902,
+  image_343,
+  cone_01_1,
+  cone_01_2,
+  frame_516,
+  frame_542,
+  frame_568,
+  frame_594,
+  frame_620,
+  frame_646
 } from "../../assets";
+
+import Header from "../../shared/Header";
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-white">
+    <div className="relative min-h-screen bg-white">
       {/* Hero Section */}
-      <section className="relative bg-[#0E52FF] min-h-[1024px] overflow-hidden">
+      <section className="relative bg-[#0043FF] min-h-[1024px] overflow-hidden">
+        <Header />
         {/* Background Grid Pattern */}
         <div className="absolute inset-0 opacity-10">
           <div
@@ -41,17 +47,13 @@ export default function Home() {
         ></div>
 
         {/* Decorative 3D Shapes */}
-        <div className="absolute top-[200px] left-[100px] w-[150px] h-[150px] opacity-20">
-          <div className="w-full h-full bg-[#CBFC01] rounded-[40px] transform rotate-45"></div>
-        </div>
-        <div className="absolute bottom-[150px] right-[150px] w-[120px] h-[120px] opacity-20">
-          <div className="w-full h-full bg-white rounded-full"></div>
-        </div>
+        <img src={cone_01_1} alt="3D Cone" className="absolute top-[200px] left-[100px] w-[150px] opacity-60" />
+        <img src={cone_01_2} alt="3D Cone" className="absolute bottom-[150px] right-[150px] w-[120px] opacity-60" />
 
         {/* Content Container */}
         <div className="relative z-10 max-w-[1200px] mx-auto px-8">
           {/* Hero Content */}
-          <div className="pt-[200px] pb-[100px]">
+          <div className="pt-[80px] pb-[100px]">
             <div className="max-w-3xl mx-auto text-center">
               <h1
                 className="text-white font-bold mb-6"
@@ -62,23 +64,29 @@ export default function Home() {
                   letterSpacing: '-0.02em',
                 }}
               >
-                Get Access to Hundreds of Courses Available
+                Get Access to Hundreds Courses Available
               </h1>
               <p
                 className="text-white/80 mb-8 text-lg max-w-2xl mx-auto"
                 style={{ fontFamily: '"Satoshi", sans-serif', lineHeight: '1.6' }}
               >
-                Level-up your creativity, gain essential knowledge, and find the best path to professional growth. Explore our wide range of courses today.
+                Unlock your creativity, gain valuable knowledge, and grow your business with our wide range of courses.
               </p>
 
               {/* Search Bar */}
               <div className="flex gap-3 max-w-2xl mx-auto mb-12">
-                <input
-                  type="text"
-                  placeholder="What do you want to learn?"
-                  className="flex-1 px-6 py-4 rounded-full border-none focus:outline-none focus:ring-2 focus:ring-[#CBFC01]"
-                  style={{ fontFamily: '"Satoshi", sans-serif' }}
-                />
+                <div className="flex-1 flex items-center gap-2 bg-white rounded-full px-6 py-2 border-none focus-within:ring-2 focus-within:ring-[#CBFC01]">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M11 19C15.4183 19 19 15.4183 19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19Z" stroke="#82868E" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                    <path d="M21 21L16.65 16.65" stroke="#82868E" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                  </svg>
+                  <input
+                    type="text"
+                    placeholder="Course, topic, creator"
+                    className="w-full py-2 bg-transparent text-gray-900 placeholder-[#82868E] border-none focus:outline-none text-lg"
+                    style={{ fontFamily: '"Satoshi", sans-serif' }}
+                  />
+                </div>
                 <button
                   className="px-8 py-4 bg-[#CBFC01] text-[#0E1116] font-bold rounded-full hover:bg-[#b8e301] transition-all"
                   style={{ fontFamily: '"Satoshi", sans-serif' }}
@@ -96,11 +104,14 @@ export default function Home() {
                 />
 
                 {/* Floating Stats Card - Student Progress */}
-                <div className="absolute top-[20%] left-[-80px] bg-white rounded-2xl p-4 shadow-xl">
-                  <div className="text-sm font-medium mb-2" style={{ fontFamily: '"Satoshi", sans-serif' }}>
-                    Your Progress
+                <div className="absolute top-[20%] left-[-80px] bg-white rounded-2xl p-4 shadow-xl z-20">
+                  <div className="flex items-center gap-2 mb-2">
+                    <img src={image_343} alt="" className="w-8 h-8 rounded-full object-cover" />
+                    <div className="text-sm font-medium" style={{ fontFamily: '"Satoshi", sans-serif' }}>
+                      Learning Progress
+                    </div>
                   </div>
-                  <div className="text-3xl font-bold text-[#0E52FF]" style={{ fontFamily: '"Clash Display", sans-serif' }}>
+                  <div className="text-3xl font-bold text-[#0043FF]" style={{ fontFamily: '"Clash Display", sans-serif' }}>
                     55%
                   </div>
                   <div className="w-24 h-2 bg-gray-200 rounded-full mt-2">
@@ -108,18 +119,27 @@ export default function Home() {
                   </div>
                 </div>
 
-                {/* Floating Course Info Card */}
-                <div className="absolute bottom-[10%] left-[-100px] bg-white rounded-2xl p-3 shadow-xl">
-                  <div className="text-xs font-medium mb-1" style={{ fontFamily: '"Satoshi", sans-serif' }}>
-                    Now Watching
-                  </div>
-                  <div className="text-sm font-bold" style={{ fontFamily: '"Satoshi", sans-serif' }}>
-                    UI/UX Design
+                {/* Floating Happy Students Card */}
+                <div className="absolute bottom-[10%] left-[-100px] bg-white rounded-2xl p-4 shadow-xl">
+                  <div className="flex justify-between items-start mb-2">
+                    <div>
+                      <div className="text-xs font-bold text-gray-900" style={{ fontFamily: '"Satoshi", sans-serif' }}>
+                        Happy Students
+                      </div>
+                      <div className="text-xs font-bold mt-1 text-gray-900" style={{ fontFamily: '"Satoshi", sans-serif' }}>
+                        4.5 <span className="text-gray-400 font-normal">(240)</span> ⭐
+                      </div>
+                    </div>
                   </div>
                   <div className="flex -space-x-2 mt-2">
                     <img src={avatar_2_b44979e1} alt="" className="w-6 h-6 rounded-full border-2 border-white" />
                     <img src={avatar_3_3fe55918} alt="" className="w-6 h-6 rounded-full border-2 border-white" />
                     <img src={avatar_4_0577f0e9} alt="" className="w-6 h-6 rounded-full border-2 border-white" />
+                    <img src={avatar_2_b44979e1} alt="" className="w-6 h-6 rounded-full border-2 border-white" />
+                    <img src={avatar_3_3fe55918} alt="" className="w-6 h-6 rounded-full border-2 border-white" />
+                    <div className="w-6 h-6 rounded-full border-2 border-white bg-gray-100 flex items-center justify-center text-[8px] font-bold">
+                      2K+
+                    </div>
                   </div>
                 </div>
               </div>
@@ -142,7 +162,7 @@ export default function Home() {
       </section>
 
       {/* Discover Section */}
-      <section className="py-20 bg-white">
+      <section className="py-20 bg-white border-b border-gray-100">
         <div className="max-w-[1200px] mx-auto px-8">
           <div className="text-center mb-16">
             <h2
@@ -188,220 +208,230 @@ export default function Home() {
           {/* Course Cards Grid */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {/* Course Card 1 */}
-            <div className="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
-              <img src={course_thumb_1_c8826419} alt="Course" className="w-full h-48 object-cover" />
+            <div className="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow relative">
+              <img src={frame_516} alt="Course" className="w-full h-48 object-cover" />
+              <div className="absolute top-4 right-4 bg-white rounded-full px-2 py-1 flex items-center gap-1 shadow">
+                <span className="text-sm font-bold text-gray-700">4.5</span>
+                <span className="text-yellow-500 text-xs">⭐</span>
+              </div>
               <div className="p-6">
-                <div className="flex items-center gap-2 mb-3">
-                  <span className="px-3 py-1 bg-gray-100 text-xs font-medium rounded-full" style={{ fontFamily: '"Satoshi", sans-serif' }}>
+                <h3 className="font-bold text-lg mb-1" style={{ fontFamily: '"Satoshi", sans-serif' }}>
+                  Learn Figma from Basic
+                </h3>
+                <div className="text-sm mb-4" style={{ fontFamily: '"Satoshi", sans-serif' }}>
+                  <span className="text-gray-500">by </span>
+                  <span className="text-[#0043FF] font-medium">purepearl studio</span>
+                </div>
+                <div className="flex items-center justify-between mb-4">
+                  <span className="px-3 py-1 bg-gray-100 text-xs font-medium rounded-full text-gray-600" style={{ fontFamily: '"Satoshi", sans-serif' }}>
                     📈 Beginner
                   </span>
-                  <div className="flex items-center gap-1 ml-auto">
-                    <span className="text-yellow-500">⭐</span>
-                    <span className="text-sm font-medium" style={{ fontFamily: '"Satoshi", sans-serif' }}>4.5</span>
+                  <div className="flex -space-x-2">
+                    <img src={avatar_2_b44979e1} alt="" className="w-6 h-6 rounded-full border-2 border-white" />
+                    <img src={avatar_3_3fe55918} alt="" className="w-6 h-6 rounded-full border-2 border-white" />
+                    <div className="w-6 h-6 rounded-full border-2 border-white bg-gray-100 flex items-center justify-center text-[10px] font-bold text-gray-700">
+                      26+
+                    </div>
                   </div>
                 </div>
-                <h3 className="font-bold text-lg mb-2" style={{ fontFamily: '"Satoshi", sans-serif' }}>
-                  Learn Figma: User Node
-                </h3>
-                <div className="flex items-center gap-2 mb-4">
-                  <img src={avatar_2_b44979e1} alt="Instructor" className="w-8 h-8 rounded-full" />
-                  <span className="text-sm text-gray-600" style={{ fontFamily: '"Satoshi", sans-serif' }}>
-                    by Jane Cooper
-                  </span>
-                </div>
-                <div className="flex items-center justify-between">
-                  <span className="text-2xl font-bold text-[#0E52FF]" style={{ fontFamily: '"Clash Display", sans-serif' }}>
+                <div className="flex items-end gap-1">
+                  <span className="text-2xl font-bold text-[#0043FF]" style={{ fontFamily: '"Clash Display", sans-serif' }}>
                     $25
                   </span>
-                  <div className="flex -space-x-2">
-                    <img src={avatar_2_b44979e1} alt="" className="w-6 h-6 rounded-full border-2 border-white" />
-                    <img src={avatar_3_3fe55918} alt="" className="w-6 h-6 rounded-full border-2 border-white" />
-                    <div className="w-6 h-6 rounded-full border-2 border-white bg-[#CBFC01] flex items-center justify-center text-xs font-bold">
-                      +
-                    </div>
-                  </div>
+                  <span className="text-sm text-gray-500 pb-1" style={{ fontFamily: '"Satoshi", sans-serif' }}>
+                    /lifetime
+                  </span>
                 </div>
               </div>
             </div>
 
-            {/* Repeat similar cards with different data */}
-            <div className="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
-              <img src={course_thumb_20_93ad9f9e} alt="Course" className="w-full h-48 object-cover" />
+            {/* Course Card 2 */}
+            <div className="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow relative">
+              <img src={frame_542} alt="Course" className="w-full h-48 object-cover" />
+              <div className="absolute top-4 right-4 bg-white rounded-full px-2 py-1 flex items-center gap-1 shadow">
+                <span className="text-sm font-bold text-gray-700">4.5</span>
+                <span className="text-yellow-500 text-xs">⭐</span>
+              </div>
               <div className="p-6">
-                <div className="flex items-center gap-2 mb-3">
-                  <span className="px-3 py-1 bg-gray-100 text-xs font-medium rounded-full" style={{ fontFamily: '"Satoshi", sans-serif' }}>
-                    📈 Beginner
-                  </span>
-                  <div className="flex items-center gap-1 ml-auto">
-                    <span className="text-yellow-500">⭐</span>
-                    <span className="text-sm font-medium" style={{ fontFamily: '"Satoshi", sans-serif' }}>4.7</span>
-                  </div>
-                </div>
-                <h3 className="font-bold text-lg mb-2" style={{ fontFamily: '"Satoshi", sans-serif' }}>
+                <h3 className="font-bold text-lg mb-1" style={{ fontFamily: '"Satoshi", sans-serif' }}>
                   Build Digital Asset
                 </h3>
-                <div className="flex items-center gap-2 mb-4">
-                  <img src={avatar_3_3fe55918} alt="Instructor" className="w-8 h-8 rounded-full" />
-                  <span className="text-sm text-gray-600" style={{ fontFamily: '"Satoshi", sans-serif' }}>
-                    by Alex Johnson
-                  </span>
+                <div className="text-sm mb-4" style={{ fontFamily: '"Satoshi", sans-serif' }}>
+                  <span className="text-gray-500">by </span>
+                  <span className="text-[#0043FF] font-medium">purepearl studio</span>
                 </div>
-                <div className="flex items-center justify-between">
-                  <span className="text-2xl font-bold text-[#0E52FF]" style={{ fontFamily: '"Clash Display", sans-serif' }}>
-                    $30
+                <div className="flex items-center justify-between mb-4">
+                  <span className="px-3 py-1 bg-gray-100 text-xs font-medium rounded-full text-gray-600" style={{ fontFamily: '"Satoshi", sans-serif' }}>
+                    📈 Beginner
                   </span>
                   <div className="flex -space-x-2">
                     <img src={avatar_2_b44979e1} alt="" className="w-6 h-6 rounded-full border-2 border-white" />
                     <img src={avatar_3_3fe55918} alt="" className="w-6 h-6 rounded-full border-2 border-white" />
-                    <div className="w-6 h-6 rounded-full border-2 border-white bg-[#CBFC01] flex items-center justify-center text-xs font-bold">
-                      +
+                    <div className="w-6 h-6 rounded-full border-2 border-white bg-gray-100 flex items-center justify-center text-[10px] font-bold text-gray-700">
+                      26+
                     </div>
                   </div>
+                </div>
+                <div className="flex items-end gap-1">
+                  <span className="text-2xl font-bold text-[#0043FF]" style={{ fontFamily: '"Clash Display", sans-serif' }}>
+                    $25
+                  </span>
+                  <span className="text-sm text-gray-500 pb-1" style={{ fontFamily: '"Satoshi", sans-serif' }}>
+                    /lifetime
+                  </span>
                 </div>
               </div>
             </div>
 
-            <div className="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
-              <img src={course_thumb_21_72e18d90} alt="Course" className="w-full h-48 object-cover" />
+            {/* Course Card 3 */}
+            <div className="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow relative">
+              <img src={frame_568} alt="Course" className="w-full h-48 object-cover" />
+              <div className="absolute top-4 right-4 bg-white rounded-full px-2 py-1 flex items-center gap-1 shadow">
+                <span className="text-sm font-bold text-gray-700">4.5</span>
+                <span className="text-yellow-500 text-xs">⭐</span>
+              </div>
               <div className="p-6">
-                <div className="flex items-center gap-2 mb-3">
-                  <span className="px-3 py-1 bg-gray-100 text-xs font-medium rounded-full" style={{ fontFamily: '"Satoshi", sans-serif' }}>
-                    📈 Intermediate
-                  </span>
-                  <div className="flex items-center gap-1 ml-auto">
-                    <span className="text-yellow-500">⭐</span>
-                    <span className="text-sm font-medium" style={{ fontFamily: '"Satoshi", sans-serif' }}>4.8</span>
-                  </div>
-                </div>
-                <h3 className="font-bold text-lg mb-2" style={{ fontFamily: '"Satoshi", sans-serif' }}>
+                <h3 className="font-bold text-lg mb-1" style={{ fontFamily: '"Satoshi", sans-serif' }}>
                   the Power of Big Data
                 </h3>
-                <div className="flex items-center gap-2 mb-4">
-                  <img src={avatar_4_0577f0e9} alt="Instructor" className="w-8 h-8 rounded-full" />
-                  <span className="text-sm text-gray-600" style={{ fontFamily: '"Satoshi", sans-serif' }}>
-                    by Sarah Williams
-                  </span>
+                <div className="text-sm mb-4" style={{ fontFamily: '"Satoshi", sans-serif' }}>
+                  <span className="text-gray-500">by </span>
+                  <span className="text-[#0043FF] font-medium">purepearl studio</span>
                 </div>
-                <div className="flex items-center justify-between">
-                  <span className="text-2xl font-bold text-[#0E52FF]" style={{ fontFamily: '"Clash Display", sans-serif' }}>
-                    $45
+                <div className="flex items-center justify-between mb-4">
+                  <span className="px-3 py-1 bg-gray-100 text-xs font-medium rounded-full text-gray-600" style={{ fontFamily: '"Satoshi", sans-serif' }}>
+                    📈 Beginner
                   </span>
                   <div className="flex -space-x-2">
                     <img src={avatar_2_b44979e1} alt="" className="w-6 h-6 rounded-full border-2 border-white" />
                     <img src={avatar_3_3fe55918} alt="" className="w-6 h-6 rounded-full border-2 border-white" />
-                    <div className="w-6 h-6 rounded-full border-2 border-white bg-[#CBFC01] flex items-center justify-center text-xs font-bold">
-                      +
+                    <div className="w-6 h-6 rounded-full border-2 border-white bg-gray-100 flex items-center justify-center text-[10px] font-bold text-gray-700">
+                      26+
                     </div>
                   </div>
+                </div>
+                <div className="flex items-end gap-1">
+                  <span className="text-2xl font-bold text-[#0043FF]" style={{ fontFamily: '"Clash Display", sans-serif' }}>
+                    $25
+                  </span>
+                  <span className="text-sm text-gray-500 pb-1" style={{ fontFamily: '"Satoshi", sans-serif' }}>
+                    /lifetime
+                  </span>
                 </div>
               </div>
             </div>
 
             {/* Add 3 more course cards */}
-            <div className="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
-              <img src={course_thumb_22_a8978945} alt="Course" className="w-full h-48 object-cover" />
+            {/* Course Card 4 */}
+            <div className="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow relative">
+              <img src={frame_594} alt="Course" className="w-full h-48 object-cover" />
+              <div className="absolute top-4 right-4 bg-white rounded-full px-2 py-1 flex items-center gap-1 shadow">
+                <span className="text-sm font-bold text-gray-700">4.5</span>
+                <span className="text-yellow-500 text-xs">⭐</span>
+              </div>
               <div className="p-6">
-                <div className="flex items-center gap-2 mb-3">
-                  <span className="px-3 py-1 bg-gray-100 text-xs font-medium rounded-full" style={{ fontFamily: '"Satoshi", sans-serif' }}>
-                    📈 Beginner
-                  </span>
-                  <div className="flex items-center gap-1 ml-auto">
-                    <span className="text-yellow-500">⭐</span>
-                    <span className="text-sm font-medium" style={{ fontFamily: '"Satoshi", sans-serif' }}>4.6</span>
-                  </div>
-                </div>
-                <h3 className="font-bold text-lg mb-2" style={{ fontFamily: '"Satoshi", sans-serif' }}>
-                  Balancing Productivity and Life
+                <h3 className="font-bold text-lg mb-1" style={{ fontFamily: '"Satoshi", sans-serif' }}>
+                  Balancing Productivity and Self-Care
                 </h3>
-                <div className="flex items-center gap-2 mb-4">
-                  <img src={avatar_2_b44979e1} alt="Instructor" className="w-8 h-8 rounded-full" />
-                  <span className="text-sm text-gray-600" style={{ fontFamily: '"Satoshi", sans-serif' }}>
-                    by Michael Brown
-                  </span>
+                <div className="text-sm mb-4" style={{ fontFamily: '"Satoshi", sans-serif' }}>
+                  <span className="text-gray-500">by </span>
+                  <span className="text-[#0043FF] font-medium">purepearl studio</span>
                 </div>
-                <div className="flex items-center justify-between">
-                  <span className="text-2xl font-bold text-[#0E52FF]" style={{ fontFamily: '"Clash Display", sans-serif' }}>
-                    $20
+                <div className="flex items-center justify-between mb-4">
+                  <span className="px-3 py-1 bg-gray-100 text-xs font-medium rounded-full text-gray-600" style={{ fontFamily: '"Satoshi", sans-serif' }}>
+                    📈 Beginner
                   </span>
                   <div className="flex -space-x-2">
                     <img src={avatar_2_b44979e1} alt="" className="w-6 h-6 rounded-full border-2 border-white" />
                     <img src={avatar_3_3fe55918} alt="" className="w-6 h-6 rounded-full border-2 border-white" />
-                    <div className="w-6 h-6 rounded-full border-2 border-white bg-[#CBFC01] flex items-center justify-center text-xs font-bold">
-                      +
+                    <div className="w-6 h-6 rounded-full border-2 border-white bg-gray-100 flex items-center justify-center text-[10px] font-bold text-gray-700">
+                      26+
                     </div>
                   </div>
+                </div>
+                <div className="flex items-end gap-1">
+                  <span className="text-2xl font-bold text-[#0043FF]" style={{ fontFamily: '"Clash Display", sans-serif' }}>
+                    $25
+                  </span>
+                  <span className="text-sm text-gray-500 pb-1" style={{ fontFamily: '"Satoshi", sans-serif' }}>
+                    /lifetime
+                  </span>
                 </div>
               </div>
             </div>
 
-            <div className="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
-              <img src={course_thumb_23_69362b02} alt="Course" className="w-full h-48 object-cover" />
+            {/* Course Card 5 */}
+            <div className="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow relative">
+              <img src={frame_620} alt="Course" className="w-full h-48 object-cover" />
+              <div className="absolute top-4 right-4 bg-white rounded-full px-2 py-1 flex items-center gap-1 shadow">
+                <span className="text-sm font-bold text-gray-700">4.5</span>
+                <span className="text-yellow-500 text-xs">⭐</span>
+              </div>
               <div className="p-6">
-                <div className="flex items-center gap-2 mb-3">
-                  <span className="px-3 py-1 bg-gray-100 text-xs font-medium rounded-full" style={{ fontFamily: '"Satoshi", sans-serif' }}>
-                    📈 Advanced
-                  </span>
-                  <div className="flex items-center gap-1 ml-auto">
-                    <span className="text-yellow-500">⭐</span>
-                    <span className="text-sm font-medium" style={{ fontFamily: '"Satoshi", sans-serif' }}>4.9</span>
-                  </div>
-                </div>
-                <h3 className="font-bold text-lg mb-2" style={{ fontFamily: '"Satoshi", sans-serif' }}>
+                <h3 className="font-bold text-lg mb-1" style={{ fontFamily: '"Satoshi", sans-serif' }}>
                   Mastering Money Management
                 </h3>
-                <div className="flex items-center gap-2 mb-4">
-                  <img src={avatar_3_3fe55918} alt="Instructor" className="w-8 h-8 rounded-full" />
-                  <span className="text-sm text-gray-600" style={{ fontFamily: '"Satoshi", sans-serif' }}>
-                    by Emma Davis
-                  </span>
+                <div className="text-sm mb-4" style={{ fontFamily: '"Satoshi", sans-serif' }}>
+                  <span className="text-gray-500">by </span>
+                  <span className="text-[#0043FF] font-medium">purepearl studio</span>
                 </div>
-                <div className="flex items-center justify-between">
-                  <span className="text-2xl font-bold text-[#0E52FF]" style={{ fontFamily: '"Clash Display", sans-serif' }}>
-                    $55
+                <div className="flex items-center justify-between mb-4">
+                  <span className="px-3 py-1 bg-gray-100 text-xs font-medium rounded-full text-gray-600" style={{ fontFamily: '"Satoshi", sans-serif' }}>
+                    📈 Beginner
                   </span>
                   <div className="flex -space-x-2">
                     <img src={avatar_2_b44979e1} alt="" className="w-6 h-6 rounded-full border-2 border-white" />
                     <img src={avatar_3_3fe55918} alt="" className="w-6 h-6 rounded-full border-2 border-white" />
-                    <div className="w-6 h-6 rounded-full border-2 border-white bg-[#CBFC01] flex items-center justify-center text-xs font-bold">
-                      +
+                    <div className="w-6 h-6 rounded-full border-2 border-white bg-gray-100 flex items-center justify-center text-[10px] font-bold text-gray-700">
+                      26+
                     </div>
                   </div>
+                </div>
+                <div className="flex items-end gap-1">
+                  <span className="text-2xl font-bold text-[#0043FF]" style={{ fontFamily: '"Clash Display", sans-serif' }}>
+                    $25
+                  </span>
+                  <span className="text-sm text-gray-500 pb-1" style={{ fontFamily: '"Satoshi", sans-serif' }}>
+                    /lifetime
+                  </span>
                 </div>
               </div>
             </div>
 
-            <div className="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
-              <img src={course_thumb_24_a7c9406f} alt="Course" className="w-full h-48 object-cover" />
+            {/* Course Card 6 */}
+            <div className="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow relative">
+              <img src={frame_646} alt="Course" className="w-full h-48 object-cover" />
+              <div className="absolute top-4 right-4 bg-white rounded-full px-2 py-1 flex items-center gap-1 shadow">
+                <span className="text-sm font-bold text-gray-700">4.5</span>
+                <span className="text-yellow-500 text-xs">⭐</span>
+              </div>
               <div className="p-6">
-                <div className="flex items-center gap-2 mb-3">
-                  <span className="px-3 py-1 bg-gray-100 text-xs font-medium rounded-full" style={{ fontFamily: '"Satoshi", sans-serif' }}>
-                    📈 Beginner
-                  </span>
-                  <div className="flex items-center gap-1 ml-auto">
-                    <span className="text-yellow-500">⭐</span>
-                    <span className="text-sm font-medium" style={{ fontFamily: '"Satoshi", sans-serif' }}>4.4</span>
-                  </div>
-                </div>
-                <h3 className="font-bold text-lg mb-2" style={{ fontFamily: '"Satoshi", sans-serif' }}>
+                <h3 className="font-bold text-lg mb-1" style={{ fontFamily: '"Satoshi", sans-serif' }}>
                   From Idea to Startup Success
                 </h3>
-                <div className="flex items-center gap-2 mb-4">
-                  <img src={avatar_4_0577f0e9} alt="Instructor" className="w-8 h-8 rounded-full" />
-                  <span className="text-sm text-gray-600" style={{ fontFamily: '"Satoshi", sans-serif' }}>
-                    by Robert Wilson
-                  </span>
+                <div className="text-sm mb-4" style={{ fontFamily: '"Satoshi", sans-serif' }}>
+                  <span className="text-gray-500">by </span>
+                  <span className="text-[#0043FF] font-medium">purepearl studio</span>
                 </div>
-                <div className="flex items-center justify-between">
-                  <span className="text-2xl font-bold text-[#0E52FF]" style={{ fontFamily: '"Clash Display", sans-serif' }}>
-                    $35
+                <div className="flex items-center justify-between mb-4">
+                  <span className="px-3 py-1 bg-gray-100 text-xs font-medium rounded-full text-gray-600" style={{ fontFamily: '"Satoshi", sans-serif' }}>
+                    📈 Beginner
                   </span>
                   <div className="flex -space-x-2">
                     <img src={avatar_2_b44979e1} alt="" className="w-6 h-6 rounded-full border-2 border-white" />
                     <img src={avatar_3_3fe55918} alt="" className="w-6 h-6 rounded-full border-2 border-white" />
-                    <div className="w-6 h-6 rounded-full border-2 border-white bg-[#CBFC01] flex items-center justify-center text-xs font-bold">
-                      +
+                    <div className="w-6 h-6 rounded-full border-2 border-white bg-gray-100 flex items-center justify-center text-[10px] font-bold text-gray-700">
+                      26+
                     </div>
                   </div>
+                </div>
+                <div className="flex items-end gap-1">
+                  <span className="text-2xl font-bold text-[#0043FF]" style={{ fontFamily: '"Clash Display", sans-serif' }}>
+                    $25
+                  </span>
+                  <span className="text-sm text-gray-500 pb-1" style={{ fontFamily: '"Satoshi", sans-serif' }}>
+                    /lifetime
+                  </span>
                 </div>
               </div>
             </div>
@@ -410,7 +440,7 @@ export default function Home() {
       </section>
 
       {/* Explore Diverse Learning Paths */}
-      <section className="py-20 bg-white">
+      <section className="py-20 bg-[#F9FAFB]">
         <div className="max-w-[1200px] mx-auto px-8">
           <div className="text-center mb-16">
             <h2
@@ -491,12 +521,12 @@ export default function Home() {
       </section>
 
       {/* Professional Growth Section */}
-      <section className="py-20 bg-gradient-to-br from-[#F0F9FF] to-[#E0F2FE]">
+      <section className="py-20 bg-[#0E1116]">
         <div className="max-w-[1200px] mx-auto px-8">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
               <h2
-                className="text-[#0E1116] font-bold mb-6"
+                className="text-white font-bold mb-6"
                 style={{
                   fontSize: '48px',
                   lineHeight: '1.1',
@@ -506,45 +536,45 @@ export default function Home() {
                 Your Path to Professional Growth Starts Here!
               </h2>
               <p
-                className="text-gray-600 mb-8"
+                className="text-gray-300 mb-8"
                 style={{ fontSize: '16px', fontFamily: '"Satoshi", sans-serif', lineHeight: '1.6' }}
               >
-                Explore our curated selection of courses designed to advance your professional journey. Whether you're seeking new skills or refining existing expertise, our platform is tailored to elevate your career and empower you with cutting-edge knowledge.
+                Explore our curated selection of courses tailored to enhance your capabilities and accelerate your career journey. Whether you are looking to sharpen specific skills, gain industry expertise, or embark on a new career path entirely, we have the resources you need.
               </p>
 
               {/* Stats */}
               <div className="grid grid-cols-3 gap-6">
                 <div>
                   <div
-                    className="text-4xl font-bold text-[#0E52FF] mb-2"
+                    className="text-4xl font-bold text-[#CBFC01] mb-2"
                     style={{ fontFamily: '"Clash Display", sans-serif' }}
                   >
-                    12K+
+                    12K
                   </div>
-                  <p className="text-sm text-gray-600" style={{ fontFamily: '"Satoshi", sans-serif' }}>
-                    Active Students
+                  <p className="text-sm text-gray-400" style={{ fontFamily: '"Satoshi", sans-serif' }}>
+                    Students
                   </p>
                 </div>
                 <div>
                   <div
-                    className="text-4xl font-bold text-[#0E52FF] mb-2"
+                    className="text-4xl font-bold text-[#CBFC01] mb-2"
                     style={{ fontFamily: '"Clash Display", sans-serif' }}
                   >
                     70+
                   </div>
-                  <p className="text-sm text-gray-600" style={{ fontFamily: '"Satoshi", sans-serif' }}>
-                    Total Courses
+                  <p className="text-sm text-gray-400" style={{ fontFamily: '"Satoshi", sans-serif' }}>
+                    Courses
                   </p>
                 </div>
                 <div>
                   <div
-                    className="text-4xl font-bold text-[#0E52FF] mb-2"
+                    className="text-4xl font-bold text-[#CBFC01] mb-2"
                     style={{ fontFamily: '"Clash Display", sans-serif' }}
                   >
                     16
                   </div>
-                  <p className="text-sm text-gray-600" style={{ fontFamily: '"Satoshi", sans-serif' }}>
-                    Categories
+                  <p className="text-sm text-gray-400" style={{ fontFamily: '"Satoshi", sans-serif' }}>
+                    Creators
                   </p>
                 </div>
               </div>
@@ -572,7 +602,7 @@ export default function Home() {
       </section>
 
       {/* Create & Manage Courses Section */}
-      <section className="py-20 bg-gradient-to-br from-[#EEF2FF] to-[#E0E7FF]">
+      <section className="py-20 bg-white">
         <div className="max-w-[1200px] mx-auto px-8">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="order-2 lg:order-1 relative">
@@ -670,7 +700,7 @@ export default function Home() {
       </section>
 
       {/* CTA Section */}
-      <section className="relative bg-[#0E52FF] py-20 overflow-hidden">
+      <section className="relative bg-[#0043FF] py-20 overflow-hidden">
         {/* Background Pattern */}
         <div className="absolute inset-0 opacity-10">
           <div
@@ -698,7 +728,7 @@ export default function Home() {
             className="text-white/80 mb-8 max-w-2xl mx-auto"
             style={{ fontSize: '18px', fontFamily: '"Satoshi", sans-serif', lineHeight: '1.6' }}
           >
-            Experience the collaboration of impactful creators and co-becoming solution on our Regain Your Self Mastery with ByteSpace Create unique and amazing courses to share your expertise with millions of users worldwide Learn new tools and strategies to stay relevant in the ever-changing industry.
+            Experience the collaboration of impactful creators on ByteSpace. Create unique and amazing courses to share your expertise with millions of users worldwide. Learn new tools and strategies to stay relevant in the ever-changing industry.
           </p>
           <button
             className="px-10 py-5 bg-[#CBFC01] text-[#0E1116] font-bold rounded-full hover:bg-[#b8e301] transition-all text-lg"
@@ -710,7 +740,7 @@ export default function Home() {
       </section>
 
       {/* Testimonials Section */}
-      <section className="py-20 bg-gradient-to-br from-[#F9FAFB] to-[#F3F4F6]">
+      <section className="py-20 bg-[#F9FAFB]">
         <div className="max-w-[1200px] mx-auto px-8">
           <div className="text-center mb-16">
             <h2
@@ -729,18 +759,18 @@ export default function Home() {
           <div className="grid md:grid-cols-3 gap-8">
             <div className="bg-white rounded-2xl p-8 shadow-lg">
               <div className="flex items-center gap-4 mb-6">
-                <img src={avatar_2_b44979e1} alt="Sami M." className="w-16 h-16 rounded-full" />
+                <img src={avatar_2_b44979e1} alt="Sarah M." className="w-16 h-16 rounded-full" />
                 <div>
                   <h3 className="font-bold" style={{ fontFamily: '"Satoshi", sans-serif' }}>
-                    Sami M.
+                    Sarah M.
                   </h3>
-                  <p className="text-sm text-gray-600" style={{ fontFamily: '"Satoshi", sans-serif' }}>
-                    Freelance Designer
+                  <p className="text-[#0E52FF] text-sm" style={{ fontFamily: '"Satoshi", sans-serif' }}>
+                    Enthusiastic Learner
                   </p>
                 </div>
               </div>
               <p className="text-gray-700 text-sm leading-relaxed" style={{ fontFamily: '"Satoshi", sans-serif' }}>
-                "ByteSpace has been a game-changer in my approach to learning. The diverse range of courses and the quality of content have really helped me hone my skills. I'm excited to continue this journey."
+                "ByteSpace has transformed my approach to learning. The diverse range of courses and the quality of content provided by creators have exceeded my expectations. The platform truly fosters a sense of community and lifelong learning."
               </p>
             </div>
 
@@ -751,13 +781,13 @@ export default function Home() {
                   <h3 className="font-bold" style={{ fontFamily: '"Satoshi", sans-serif' }}>
                     James L.
                   </h3>
-                  <p className="text-sm text-gray-600" style={{ fontFamily: '"Satoshi", sans-serif' }}>
-                    Software Developer
+                  <p className="text-[#0E52FF] text-sm" style={{ fontFamily: '"Satoshi", sans-serif' }}>
+                    Lifelong Learner
                   </p>
                 </div>
               </div>
               <p className="text-gray-700 text-sm leading-relaxed" style={{ fontFamily: '"Satoshi", sans-serif' }}>
-                "The platform is intuitive, and the instructors are top-notch. ByteSpace really cares for its students and strives to ensure everyone gets the learning support they need."
+                "I've tried several online learning platforms, and ByteSpace stands out for its vibrant community and the variety of courses available. The easy navigation and engaging content make it a go-to platform for continuous skill development."
               </p>
             </div>
 
@@ -768,13 +798,13 @@ export default function Home() {
                   <h3 className="font-bold" style={{ fontFamily: '"Satoshi", sans-serif' }}>
                     Alex B.
                   </h3>
-                  <p className="text-sm text-gray-600" style={{ fontFamily: '"Satoshi", sans-serif' }}>
-                    Marketing Specialist
+                  <p className="text-[#0E52FF] text-sm" style={{ fontFamily: '"Satoshi", sans-serif' }}>
+                    Inspired Creator
                   </p>
                 </div>
               </div>
               <p className="text-gray-700 text-sm leading-relaxed" style={{ fontFamily: '"Satoshi", sans-serif' }}>
-                "I love how ByteSpace offers courses that are both engaging and practical. The lessons are clear, and the instructors are always available to answer questions. Highly recommend!"
+                "As a creator, ByteSpace has been a game-changer for me. The Course Editor is user-friendly, and the support from the community is incredible. It's fulfilling to see my courses making a positive impact on learners globally."
               </p>
             </div>
           </div>
@@ -784,9 +814,9 @@ export default function Home() {
       {/* Footer */}
       <footer className="bg-white py-16 border-t border-gray-200">
         <div className="max-w-[1200px] mx-auto px-8">
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
+          <div className="grid grid-cols-1 md:grid-cols-5 gap-12 mb-12">
             {/* Newsletter */}
-            <div className="md:col-span-1">
+            <div className="md:col-span-2">
               <div className="flex items-center gap-2 mb-4">
                 <img src={bytespace_logo} alt="ByteSpace" className="w-[24px] h-[26px]" />
                 <span className="font-bold text-xl" style={{ fontFamily: '"Clash Display", sans-serif' }}>
@@ -800,14 +830,14 @@ export default function Home() {
                 <input
                   type="email"
                   placeholder="Enter your email"
-                  className="flex-1 px-4 py-2 border border-gray-300 rounded-full text-sm"
+                  className="flex-1 min-w-0 px-4 py-2 border border-gray-300 rounded-full text-sm"
                   style={{ fontFamily: '"Satoshi", sans-serif' }}
                 />
                 <button
-                  className="px-6 py-2 bg-[#CBFC01] text-black font-medium rounded-full hover:bg-[#b8e301] transition-colors"
+                  className="px-6 py-2 bg-[#CBFC01] text-black font-medium rounded-full hover:bg-[#b8e301] transition-colors shrink-0"
                   style={{ fontFamily: '"Satoshi", sans-serif', fontSize: '14px' }}
                 >
-                  Search
+                  Subscribe
                 </button>
               </div>
               <p className="text-xs text-gray-500 mt-3" style={{ fontFamily: '"Satoshi", sans-serif' }}>

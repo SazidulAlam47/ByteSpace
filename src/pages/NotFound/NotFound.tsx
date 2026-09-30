@@ -41,7 +41,7 @@ export default function NotFound() {
       </header>
 
       {/* 404 Section */}
-      <section className="relative bg-[#0E52FF] min-h-[60vh] flex items-center justify-center overflow-hidden">
+      <section className="relative bg-[#0043FF] min-h-[60vh] flex items-center justify-center overflow-hidden">
         {/* Background Pattern */}
         <div className="absolute inset-0 opacity-10">
           <div className="absolute top-0 left-0 w-full h-full"

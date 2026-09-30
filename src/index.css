@@ -1,75 +1,116 @@
 @import "tailwindcss";
 
 @theme {
-  --color-primary-gb: #0e52ff;
+  /* Persian Blue palette (from Figma export) */
+  --color-persian-blue-50: #E7F6FF;
+  --color-persian-blue-100: #D3EEFF;
+  --color-persian-blue-200: #B0DDFF;
+  --color-persian-blue-300: #81C5FF;
+  --color-persian-blue-400: #4F9DFF;
+  --color-persian-blue-500: #2872FF;
+  --color-persian-blue-600: #0445FF;
+  --color-persian-blue-700: #0043FF;
+  --color-persian-blue-800: #003BE2;
+  --color-persian-blue-900: #0B36A4;
+  --color-persian-blue-950: #071E5F;
+
+  /* Electric Lime palette (from Figma export) */
+  --color-electric-lime-50: #FDFFE4;
+  --color-electric-lime-100: #FAFFC5;
+  --color-electric-lime-200: #F2FF92;
+  --color-electric-lime-300: #E4FF54;
+  --color-electric-lime-400: #D4FB20;
+  --color-electric-lime-500: #CBFC01;
+  --color-electric-lime-600: #8CB400;
+  --color-electric-lime-700: #6A8902;
+  --color-electric-lime-800: #546B09;
+  --color-electric-lime-900: #465A0D;
+
+  /* Shuttle Gray palette (from Figma export) */
+  --color-shuttle-gray-50: #F5F5F6;
+  --color-shuttle-gray-100: #E5E6E8;
+  --color-shuttle-gray-200: #CED0D3;
+  --color-shuttle-gray-300: #ABAEB5;
+  --color-shuttle-gray-400: #82868E;
+  --color-shuttle-gray-500: #666973;
+  --color-shuttle-gray-600: #585A62;
+  --color-shuttle-gray-700: #4B4C53;
+  --color-shuttle-gray-800: #424348;
+  --color-shuttle-gray-900: #3A3B3F;
+  --color-shuttle-gray-950: #242528;
+
+  /* Legacy aliases for backward compatibility */
+  --color-primary-gb: #0043FF;
   --color-warning-gb: #efc30c;
   --color-warning-accent: #fdd300;
   --color-light-gray-gb: #f1f6ff;
-  --color-dark-gb: #121212;
-  --font-montserrat: 'Montserrat', sans-serif;
+  --color-dark-gb: #0E1116;
+
+  /* Typography */
+  --font-poppins: 'Poppins', sans-serif;
+  --font-satoshi: 'Satoshi', sans-serif;
+  --font-clash-display: 'Clash Display', sans-serif;
 }
 
 body {
-  font-family: 'Montserrat', sans-serif;
-  color: #121212;
+  font-family: 'Satoshi', sans-serif;
+  color: #0E1116;
   background-color: #ffffff;
   overflow-x: hidden;
 }
 
-/* Garibook button styles matching reference */
+/* ByteSpace button styles from Figma export */
 .theme-primary-btn {
-  border-radius: 15px;
-  background-color: #0e52ff;
+  border-radius: 24px;
+  background-color: #0043FF;
   color: #ffffff;
+  font-family: 'Satoshi', sans-serif;
   font-weight: 600;
-  font-size: 18px;
-  line-height: 28px;
-  padding: 14px 26px;
+  font-size: 16px;
+  line-height: 160%;
+  padding: 12px 24px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  gap: 12px;
+  gap: 8px;
   transition: all 0.3s ease;
-  box-shadow: 0 4px 14px rgba(14, 82, 255, 0.25);
   cursor: pointer;
   text-decoration: none;
 }
 
 .theme-primary-btn:hover {
-  background-color: #003edc;
-  transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(14, 82, 255, 0.35);
+  background-color: #003BE2;
+  transform: translateY(-1px);
 }
 
 .theme-warning-btn {
-  border-radius: 15px;
-  background-color: #fdd300;
-  color: #121212;
+  border-radius: 24px;
+  background-color: #CBFC01;
+  color: #0E1116;
+  font-family: 'Satoshi', sans-serif;
   font-weight: 600;
-  font-size: 18px;
-  line-height: 28px;
-  padding: 14px 26px;
+  font-size: 16px;
+  line-height: 160%;
+  padding: 12px 24px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  gap: 12px;
+  gap: 8px;
   transition: all 0.3s ease;
-  box-shadow: 0 4px 14px rgba(253, 211, 0, 0.3);
   cursor: pointer;
   text-decoration: none;
 }
 
 .theme-warning-btn:hover {
-  background-color: #efc30c;
-  transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(239, 195, 12, 0.4);
+  background-color: #8CB400;
+  transform: translateY(-1px);
 }
 
 /* Typing cursor animation */
 .typing-cursor:after {
   content: "|";
   animation: blink 1s step-end infinite;
-  color: #0e52ff;
+  color: #0043FF;
   margin-left: 4px;
 }
 

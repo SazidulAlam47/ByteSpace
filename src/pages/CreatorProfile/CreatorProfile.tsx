@@ -2,23 +2,23 @@ import { Link } from "react-router";
 import Header from "../../shared/Header";
 import {
   avatar_2_b44979e1,
-  course_thumb_1_c8826419,
-  course_thumb_20_93ad9f9e,
-  course_thumb_21_72e18d90,
-  course_thumb_22_a8978945,
-  course_thumb_23_69362b02,
-  course_thumb_24_a7c9406f,
   avatar_3_3fe55918,
+  frame_516,
+  frame_542,
+  frame_568,
+  frame_594,
+  frame_620,
+  frame_646,
 } from "../../assets";
+
 
 export default function CreatorProfile() {
   return (
     <div className="min-h-screen bg-white">
-      <Header />
-
       {/* Creator Hero Section */}
-      <section className="bg-[#0E52FF] pt-32 pb-24">
-        <div className="max-w-[1200px] mx-auto px-8">
+      <section className="bg-[#0043FF] pb-24">
+        <Header />
+        <div className="pt-8 max-w-[1200px] mx-auto px-8">
           <div className="flex items-start gap-8">
             <img
               src={avatar_2_b44979e1}
@@ -109,7 +109,7 @@ export default function CreatorProfile() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {[
               {
-                image: course_thumb_1_c8826419,
+                image: frame_516,
                 title: 'Learn Figma from Basic',
                 instructor: 'purepearl studio',
                 level: 'Beginner',
@@ -118,7 +118,7 @@ export default function CreatorProfile() {
                 students: [avatar_2_b44979e1, avatar_3_3fe55918],
               },
               {
-                image: course_thumb_20_93ad9f9e,
+                image: frame_542,
                 title: 'Build Digital Asset',
                 instructor: 'purepearl studio',
                 level: 'Beginner',
@@ -127,7 +127,7 @@ export default function CreatorProfile() {
                 students: [avatar_2_b44979e1, avatar_3_3fe55918],
               },
               {
-                image: course_thumb_21_72e18d90,
+                image: frame_568,
                 title: 'the Power of Big Data',
                 instructor: 'purepearl studio',
                 level: 'Beginner',
@@ -136,8 +136,8 @@ export default function CreatorProfile() {
                 students: [avatar_2_b44979e1, avatar_3_3fe55918],
               },
               {
-                image: course_thumb_22_a8978945,
-                title: 'Balancing Productivity and',
+                image: frame_594,
+                title: 'Balancing Productivity and Self-Care',
                 instructor: 'purepearl studio',
                 level: 'Beginner',
                 rating: 4.5,
@@ -145,8 +145,8 @@ export default function CreatorProfile() {
                 students: [avatar_2_b44979e1, avatar_3_3fe55918],
               },
               {
-                image: course_thumb_23_69362b02,
-                title: 'Mastering Money Managem...',
+                image: frame_620,
+                title: 'Mastering Money Management',
                 instructor: 'purepearl studio',
                 level: 'Beginner',
                 rating: 4.5,
@@ -154,8 +154,8 @@ export default function CreatorProfile() {
                 students: [avatar_2_b44979e1, avatar_3_3fe55918],
               },
               {
-                image: course_thumb_24_a7c9406f,
-                title: 'From Idea to Startup Succe',
+                image: frame_646,
+                title: 'From Idea to Startup Success',
                 instructor: 'purepearl studio',
                 level: 'Beginner',
                 rating: 4.5,
@@ -163,6 +163,7 @@ export default function CreatorProfile() {
                 students: [avatar_2_b44979e1, avatar_3_3fe55918],
               },
             ].map((course, index) => (
+
               <Link
                 key={index}
                 to="/course/details"
@@ -207,7 +208,7 @@ export default function CreatorProfile() {
                   </div>
                   <div className="flex items-center justify-between">
                     <span
-                      className="text-2xl font-bold text-[#0E52FF]"
+                      className="text-2xl font-bold text-[#0043FF]"
                       style={{ fontFamily: '"Clash Display", sans-serif' }}
                     >
                       ${course.price}<span className="text-sm font-normal text-gray-500">/lifetime</span>

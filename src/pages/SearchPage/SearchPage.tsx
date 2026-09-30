@@ -3,22 +3,22 @@ import Header from "../../shared/Header";
 import {
   avatar_2_b44979e1,
   avatar_3_3fe55918,
-  course_thumb_1_c8826419,
-  course_thumb_20_93ad9f9e,
-  course_thumb_21_72e18d90,
-  course_thumb_22_a8978945,
-  course_thumb_23_69362b02,
-  course_thumb_24_a7c9406f,
+  frame_516,
+  frame_542,
+  frame_568,
+  frame_594,
+  frame_620,
+  frame_646,
 } from "../../assets";
+
 
 export default function SearchPage() {
   return (
     <div className="min-h-screen bg-white">
-      <Header />
-
       {/* Search Hero Section */}
-      <section className="bg-[#0E52FF] pt-32 pb-16">
-        <div className="max-w-[1200px] mx-auto px-8">
+      <section className="bg-[#0043FF] pb-16">
+        <Header />
+        <div className="pt-8 max-w-[1200px] mx-auto px-8">
           <h1
             className="text-white font-bold mb-8 text-center"
             style={{
@@ -106,60 +106,61 @@ export default function SearchPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
             {[
               {
-                image: course_thumb_1_c8826419,
+                image: frame_516,
                 title: 'Learn Figma from Basic',
-                instructor: 'Jane Cooper',
+                instructor: 'purepearl studio',
                 avatar: avatar_2_b44979e1,
                 level: 'Beginner',
                 rating: 4.5,
                 price: 25,
               },
               {
-                image: course_thumb_20_93ad9f9e,
+                image: frame_542,
                 title: 'Build Digital Asset',
-                instructor: 'Alex Johnson',
+                instructor: 'purepearl studio',
                 avatar: avatar_3_3fe55918,
                 level: 'Beginner',
                 rating: 4.5,
                 price: 25,
               },
               {
-                image: course_thumb_21_72e18d90,
+                image: frame_568,
                 title: 'the Power of Big Data',
-                instructor: 'Sarah Williams',
+                instructor: 'purepearl studio',
                 avatar: avatar_2_b44979e1,
                 level: 'Beginner',
                 rating: 4.5,
                 price: 25,
               },
               {
-                image: course_thumb_22_a8978945,
-                title: 'Balancing Productivity and',
-                instructor: 'Michael Brown',
+                image: frame_594,
+                title: 'Balancing Productivity and Self-Care',
+                instructor: 'purepearl studio',
                 avatar: avatar_3_3fe55918,
                 level: 'Beginner',
                 rating: 4.5,
                 price: 25,
               },
               {
-                image: course_thumb_23_69362b02,
+                image: frame_620,
                 title: 'Mastering Money Management',
-                instructor: 'Emma Davis',
+                instructor: 'purepearl studio',
                 avatar: avatar_2_b44979e1,
                 level: 'Beginner',
                 rating: 4.5,
                 price: 25,
               },
               {
-                image: course_thumb_24_a7c9406f,
+                image: frame_646,
                 title: 'From Idea to Startup Success',
-                instructor: 'Robert Wilson',
+                instructor: 'purepearl studio',
                 avatar: avatar_3_3fe55918,
                 level: 'Beginner',
                 rating: 4.5,
                 price: 25,
               },
             ].map((course, index) => (
+
               <Link
                 key={index}
                 to="/course/details"
@@ -192,7 +193,7 @@ export default function SearchPage() {
                   </div>
                   <div className="flex items-center justify-between">
                     <span
-                      className="text-2xl font-bold text-[#0E52FF]"
+                      className="text-2xl font-bold text-[#0043FF]"
                       style={{ fontFamily: '"Clash Display", sans-serif' }}
                     >
                       ${course.price}<span className="text-sm font-normal text-gray-500">/lifetime</span>
@@ -210,65 +211,6 @@ export default function SearchPage() {
             ))}
           </div>
 
-          {/* Load More Grid - Repeat pattern */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
-            {[
-              course_thumb_1_c8826419,
-              course_thumb_20_93ad9f9e,
-              course_thumb_21_72e18d90,
-              course_thumb_22_a8978945,
-              course_thumb_23_69362b02,
-              course_thumb_24_a7c9406f,
-            ].map((image, index) => (
-              <Link
-                key={index}
-                to="/course/details"
-                className="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow"
-              >
-                <img src={image} alt="Course" className="w-full h-48 object-cover" />
-                <div className="p-6">
-                  <div className="flex items-center gap-2 mb-3">
-                    <span
-                      className="px-3 py-1 bg-gray-100 text-xs font-medium rounded-full"
-                      style={{ fontFamily: '"Satoshi", sans-serif' }}
-                    >
-                      📊 Beginner
-                    </span>
-                    <div className="flex items-center gap-1 ml-auto">
-                      <span className="text-yellow-500">⭐</span>
-                      <span className="text-sm font-medium" style={{ fontFamily: '"Satoshi", sans-serif' }}>
-                        4.5
-                      </span>
-                    </div>
-                  </div>
-                  <h3 className="font-bold text-lg mb-2" style={{ fontFamily: '"Satoshi", sans-serif' }}>
-                    Course Title {index + 7}
-                  </h3>
-                  <div className="flex items-center gap-2 mb-4">
-                    <img src={avatar_2_b44979e1} alt="Instructor" className="w-8 h-8 rounded-full" />
-                    <span className="text-sm text-gray-600" style={{ fontFamily: '"Satoshi", sans-serif' }}>
-                      by Instructor
-                    </span>
-                  </div>
-                  <div className="flex items-center justify-between">
-                    <span
-                      className="text-2xl font-bold text-[#0E52FF]"
-                      style={{ fontFamily: '"Clash Display", sans-serif' }}
-                    >
-                      $25<span className="text-sm font-normal text-gray-500">/lifetime</span>
-                    </span>
-                    <div className="flex -space-x-2">
-                      <img src={avatar_2_b44979e1} alt="" className="w-6 h-6 rounded-full border-2 border-white" />
-                      <img src={avatar_3_3fe55918} alt="" className="w-6 h-6 rounded-full border-2 border-white" />
-                      <div className="w-6 h-6 rounded-full border-2 border-white bg-[#CBFC01] flex items-center justify-center text-xs font-bold">
-                        +
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </Link>
-            ))}
-          </div>
 
           {/* Pagination */}
           <div className="flex justify-center items-center gap-2">

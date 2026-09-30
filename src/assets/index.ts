@@ -74,3 +74,20 @@ export { default as signal_cellular_alt } from "./icons/signal_cellular_alt.svg"
 export { default as vector_1 } from "./icons/vector-1.svg";
 export { default as vector_2 } from "./icons/vector-2.svg";
 export { default as vector } from "./icons/vector.svg";
+
+// --- Figma-export assets (course card previews, cones, hero images) ---
+export { default as frame_69 } from "./frame-69.png";
+export { default as frame_95 } from "./frame-95.png";
+export { default as frame_209 } from "./frame-209.png";
+export { default as frame_235 } from "./frame-235.png";
+export { default as cone_01_1 } from "./cone_01_1.png";
+export { default as cone_01_2 } from "./cone_01_2.png";
+export { default as frame_516 } from "./frame-516.png";
+export { default as frame_542 } from "./frame-542.png";
+export { default as frame_568 } from "./frame-568.png";
+export { default as frame_594 } from "./frame-594.png";
+export { default as frame_620 } from "./frame-620.png";
+export { default as frame_646 } from "./frame-646.png";
+export { default as image_343 } from "./image-343.png";
+export { default as image_798 } from "./image-798.png";
+export { default as image_831 } from "./image-831.png";
