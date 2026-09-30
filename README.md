@@ -1,85 +1,78 @@
-# Garibook Homepage Recreation
+# 🚀 ByteSpace - Modern E-Learning Platform
 
-A faithful, responsive, component-based recreation of the [Garibook](https://garibook.com/) homepage built with React, TypeScript, Tailwind CSS, and GSAP.
+ByteSpace is a fully responsive, modern e-learning platform frontend built to connect eager learners with expert creators. It offers a seamless, interactive user interface for discovering, tracking, and engaging with educational content across multiple disciplines like Design, Development, IT & Business, and more.
 
-## Features
+## ✨ Key Features
 
-- **Visual Fidelity & Modern UI**: Recreates Garibook's homepage layout, typography (Montserrat), branding, buttons, and responsive grid.
-- **GSAP Animations**:
-  - **Hero Entrance Animation**: Smooth typewriter animation cycling between hero headlines, subtitle/description reveal, and decorative 3D element floating motion.
-  - **Stats Counting Animation**: ScrollTrigger-powered animated count-up for all 4 key business metrics (Trip Requests, Total Customers, Active Drivers, Districts Covered).
-  - **Services Stagger Reveal**: Smooth staggered entrance of service cards on scroll.
-  - **Freedom & Together Image Parallax/Zoom**: ScrollTrigger entrance animations and hover micro-interactions.
-- **Interactive Booking Form (`RentalSection`)**:
-  - Tab switching between **Car Rental** and **Airport Rental**.
-  - Custom interactive **Choose a Car** dropdown with vehicle images, names, and seating capacities (Sedan Premium, Sedan, Noah, HiAce, Sedan Economy, Chander Gari).
-  - **Airport Picker** with major airports in Bangladesh.
-  - Interactive trip type options (One Way, Round Way, Hourly; From Airport, From Home).
-  - Validation feedback and quick city suggestions.
-- **Interactive Services Section**:
-  - Tabbed interface switching between **Rides**, **Garibook Business**, **Garibook Club**, and **VMS**.
-- **Interactive Media Coverage (`News`)**:
-  - Featured news from top media platforms (Prothom Alo, Dhaka Tribune, Samakal, The Daily Star, BSS News, Daily Sun) with previous/next carousel navigation.
-- **Passenger Reviews & Video Player Modal (`Reviews`)**:
-  - Video testimonials with thumbnail cards and an interactive embedded YouTube video modal.
-- **Travel Blog (`Beyond Destinations`)**:
-  - Travel guides, recommendations, and insights.
-- **Responsive Navigation & Mobile Drawer**:
-  - Sticky header with glassmorphism blur on scroll.
-  - Interactive language toggle (English / বাংলা).
-  - Slide-out mobile offcanvas drawer with backdrop and brand vector artwork.
-- **Complete Footer**:
-  - Upper multi-column link directories, Middle app promotion & partner credentials (NRB Solution Ltd., Link 3 Technologies), and Bottom trade license, copyright, and SSL payment gateway banner.
+- **Dynamic Course Browsing:** Intuitive search and filtering system with category-based navigation.
+- **Detailed Course Pages:** Comprehensive course details, including syllabus overviews, instructor information, pricing cards, and student reviews.
+- **Interactive Lesson Player:** A dedicated workspace for students to watch course videos and track module progress.
+- **Creator Profiles:** Dedicated instructor portfolios showcasing their active courses, expertise, and community ratings.
+- **Authentication Pages:** Clean, split-screen Login and Registration layouts.
+- **Responsive Design:** Pixel-perfect, mobile-friendly interface built strictly adhering to modern UI/UX principles (designed via Figma/Pixso).
 
-## Tech Stack
+## 🛠️ Tech Stack
 
-- **React 19** with **TypeScript**
-- **Vite 8**
-- **Tailwind CSS v4**
-- **GSAP 3** (with `ScrollTrigger`)
-- **React Router 8**
+- **Framework:** [React 18](https://react.dev/)
+- **Build Tool:** [Vite](https://vitejs.dev/)
+- **Language:** [TypeScript](https://www.typescriptlang.org/)
+- **Styling:** [Tailwind CSS](https://tailwindcss.com/)
+- **Routing:** [React Router v7](https://reactrouter.com/) (using `createBrowserRouter`)
+- **Linting:** [ESLint](https://eslint.org/) (Flat Config)
 
-## Getting Started
+## 📁 Folder Structure
+
+The project follows a modular, scalable directory structure:
+
+```text
+src/
+├── assets/         # Static visual assets, images, and SVG icons
+├── components/     # Reusable UI components (CourseCard, CategoryCard, etc.)
+├── constants/      # Static data, mock configurations, and text constants
+├── layouts/        # Structural wrappers (MainLayout for global header/footer, AuthLayout)
+├── pages/          # Full page views (Home, CourseDetails, SearchPage, CreatorProfile, etc.)
+├── routes/         # Router configuration and path definitions
+├── shared/         # Global shared UI elements (Header, Footer)
+└── types/          # TypeScript interfaces and type definitions
+```
+
+## 🚀 Getting Started
+
+Follow these steps to set up the project locally on your machine.
 
 ### Prerequisites
 
-- Node.js (v18 or higher recommended)
-- npm or pnpm or yarn
+- Node.js (v18+ recommended)
+- npm or yarn
 
 ### Installation
 
-```bash
-npm install
-```
+1. **Clone the repository:**
+   ```bash
+   git clone <your-repository-url>
+   cd doin-tech
+   ```
 
-### Development Server
+2. **Install dependencies:**
+   ```bash
+   npm install
+   ```
 
-Start the local development server with Hot Module Replacement (HMR):
+3. **Start the development server:**
+   ```bash
+   npm run dev
+   ```
+   The application will be available at `http://localhost:5173`.
 
-```bash
-npm run dev
-```
+## 📜 Scripts
 
-### Production Build
+- `npm run dev`: Starts the Vite development server.
+- `npm run build`: Compiles the TypeScript code and builds the project for production.
+- `npm run lint`: Runs ESLint to identify and fix code style issues (Unused imports, formatting errors, etc.).
+- `npm run preview`: Bootstraps a local web server to preview the production build.
 
-Type-check with TypeScript and build the optimized production assets:
+## 🎨 Design & Architecture Notes
 
-```bash
-npm run build
-```
-
-### Preview Production Build
-
-Preview the production build locally:
-
-```bash
-npm run preview
-```
-
-### Linting
-
-Run ESLint across the codebase:
-
-```bash
-npm run lint
-```
+- **Component Architecture:** Pages are strictly split into individual sections (e.g., `DiscoverSection`, `HeroSection`) to maintain readability. Reusable cards are abstracted into the `src/components` folder.
+- **Type Safety:** All props, component structures, and constant data objects are strictly typed via the `src/types` directory.
+- **Code Style:** All components utilize ES6 Arrow Functions and end-of-file `export default` statements for consistency.
