@@ -1,5 +1,3 @@
-import React from 'react';
-
 import type { CategoryCardProps } from '../types/home.type';
 
 const CategoryCard = ({ icon, title }: CategoryCardProps) => {

@@ -1,5 +1,3 @@
-import React from 'react';
-
 import { avatar_2_b44979e1, avatar_3_3fe55918 } from '../assets';
 
 import type { CourseCardProps } from '../types/home.type';

@@ -1,4 +1,3 @@
-import React from 'react';
 import { Link } from 'react-router';
 import Header from "../../shared/Header";
 import Footer from "../../shared/Footer";

@@ -1,5 +1,3 @@
-import React from 'react';
-
 import { image_17_d5e9c4dc } from '../../../assets';
 const GrowthSection = () => {
   return (

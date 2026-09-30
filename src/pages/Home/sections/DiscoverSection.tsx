@@ -1,5 +1,3 @@
-import React from 'react';
-
 import CourseCard from "../../../components/CourseCard";
 import { COURSES } from '../../../constants/home.constant';
 

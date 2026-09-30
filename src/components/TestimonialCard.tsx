@@ -1,5 +1,3 @@
-import React from 'react';
-
 import type { TestimonialCardProps } from '../types/home.type';
 
 const TestimonialCard = ({ avatar, name, role, content }: TestimonialCardProps) => {

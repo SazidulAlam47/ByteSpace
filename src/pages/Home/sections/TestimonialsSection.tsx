@@ -1,4 +1,3 @@
-import React from 'react';
 import TestimonialCard from "../../../components/TestimonialCard";
 import { TESTIMONIALS } from "../../../constants/home.constant";
 
