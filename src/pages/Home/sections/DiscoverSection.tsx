@@ -1,68 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router';
-import {
-  avatar_2_b44979e1,
-  avatar_3_3fe55918,
-  frame_516,
-  frame_542,
-  frame_568,
-  frame_594,
-  frame_620,
-  frame_646
-} from "../../../assets";
 import CourseCard from "../../../components/CourseCard";
+import { COURSES } from "../../../constants/home.constant";
 
 export default function DiscoverSection() {
-  const courses = [
-    {
-      image: frame_516,
-      title: 'Learn Figma from Basic',
-      instructor: 'purepearl studio',
-      level: 'Beginner',
-      rating: 4.5,
-      price: 25,
-    },
-    {
-      image: frame_542,
-      title: 'Build Digital Asset',
-      instructor: 'purepearl studio',
-      level: 'Beginner',
-      rating: 4.5,
-      price: 25,
-    },
-    {
-      image: frame_568,
-      title: 'the Power of Big Data',
-      instructor: 'purepearl studio',
-      level: 'Beginner',
-      rating: 4.5,
-      price: 25,
-    },
-    {
-      image: frame_594,
-      title: 'Balancing Productivity and Self-Care',
-      instructor: 'purepearl studio',
-      level: 'Beginner',
-      rating: 4.5,
-      price: 25,
-    },
-    {
-      image: frame_620,
-      title: 'Mastering Money Management',
-      instructor: 'purepearl studio',
-      level: 'Beginner',
-      rating: 4.5,
-      price: 25,
-    },
-    {
-      image: frame_646,
-      title: 'From Idea to Startup Success',
-      instructor: 'purepearl studio',
-      level: 'Beginner',
-      rating: 4.5,
-      price: 25,
-    }
-  ];
 
   return (
     <section className="py-20 bg-white border-b border-gray-100">
@@ -103,7 +44,7 @@ export default function DiscoverSection() {
 
         {/* Course Grid */}
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
-          {courses.map((course, idx) => (
+          {COURSES.map((course, idx) => (
             <CourseCard key={idx} {...course} />
           ))}
         </div>

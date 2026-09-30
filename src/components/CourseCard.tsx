@@ -2,15 +2,7 @@ import React from 'react';
 import { Link } from 'react-router';
 import { avatar_2_b44979e1, avatar_3_3fe55918 } from '../assets';
 
-export interface CourseCardProps {
-  image: string;
-  title: string;
-  instructor: string;
-  avatar?: string;
-  level: string;
-  rating: number;
-  price: number;
-}
+import type { CourseCardProps } from '../types/home.type';
 
 export default function CourseCard({
   image,

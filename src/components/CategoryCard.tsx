@@ -1,9 +1,6 @@
 import React from 'react';
 
-export interface CategoryCardProps {
-  icon: string | React.ReactNode;
-  title: string;
-}
+import type { CategoryCardProps } from '../types/home.type';
 
 export default function CategoryCard({ icon, title }: CategoryCardProps) {
   return (

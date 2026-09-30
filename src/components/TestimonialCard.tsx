@@ -1,11 +1,6 @@
 import React from 'react';
 
-export interface TestimonialCardProps {
-  avatar: string;
-  name: string;
-  role: string;
-  content: string;
-}
+import type { TestimonialCardProps } from '../types/home.type';
 
 export default function TestimonialCard({ avatar, name, role, content }: TestimonialCardProps) {
   return (

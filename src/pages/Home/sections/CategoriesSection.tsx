@@ -1,15 +1,8 @@
 import React from 'react';
 import CategoryCard from "../../../components/CategoryCard";
+import { CATEGORIES } from "../../../constants/home.constant";
 
 export default function CategoriesSection() {
-  const categories = [
-    { icon: '🎨', title: 'Design' },
-    { icon: '💻', title: 'Development' },
-    { icon: '💼', title: 'IT & Business' },
-    { icon: '📈', title: 'Business' },
-    { icon: '📸', title: 'Photography' },
-    { icon: '🎵', title: 'Music' }
-  ];
 
   return (
     <section className="py-20 bg-[#F9FAFB]">
@@ -35,7 +28,7 @@ export default function CategoriesSection() {
 
         {/* Category Icons Grid */}
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6 mb-12">
-          {categories.map((cat, idx) => (
+          {CATEGORIES.map((cat, idx) => (
             <CategoryCard key={idx} icon={cat.icon} title={cat.title} />
           ))}
         </div>
