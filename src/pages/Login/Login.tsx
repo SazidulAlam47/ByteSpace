@@ -19,7 +19,7 @@ export default function Login() {
       <img src={cone_01_2} alt="" className="absolute bottom-[20%] left-[5%] w-[100px] opacity-80 z-0 pointer-events-none" />
 
       {/* Logo */}
-      <div className="absolute top-8 left-8 z-50 flex items-center gap-2">
+      <Link to="/" className="absolute top-8 left-8 z-50 flex items-center gap-2">
         <img src={bytespace_logo} alt="ByteSpace" className="w-[29px] h-[32px]" />
         <span
           className="text-white font-bold tracking-wide"
@@ -27,7 +27,7 @@ export default function Login() {
         >
           ByteSpace
         </span>
-      </div>
+      </Link>
 
       <div className="relative z-10 flex items-center justify-center min-h-screen px-8 py-12">
         <div className="w-full max-w-6xl flex items-center gap-16">
