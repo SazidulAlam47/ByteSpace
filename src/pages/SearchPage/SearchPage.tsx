@@ -11,11 +11,9 @@ import {
   frame_646,
 } from "../../assets";
 
-
 export default function SearchPage() {
   return (
     <div className="min-h-screen bg-white">
-      {/* Search Hero Section */}
       <section className="bg-[#0043FF] pb-16">
         
         <div className="pt-8 max-w-[1200px] mx-auto px-8">
@@ -30,7 +28,6 @@ export default function SearchPage() {
             Find Your Next Course
           </h1>
 
-          {/* Search Bar */}
           <div className="flex gap-3 max-w-2xl mx-auto">
             <div className="flex-1 relative">
               <input
@@ -53,10 +50,8 @@ export default function SearchPage() {
         </div>
       </section>
 
-      {/* Main Content */}
       <section className="py-16">
         <div className="max-w-[1200px] mx-auto px-8">
-          {/* Filters */}
           <div className="flex items-center justify-between mb-8">
             <div className="flex gap-3">
               <button className="px-4 py-2 border border-gray-300 rounded-lg flex items-center gap-2 hover:bg-gray-50">
@@ -74,7 +69,6 @@ export default function SearchPage() {
             </button>
           </div>
 
-          {/* Category Tags */}
           <div className="flex flex-wrap gap-3 mb-12">
             <button
               className="px-6 py-3 bg-[#CBFC01] text-black font-medium rounded-full"
@@ -102,7 +96,6 @@ export default function SearchPage() {
             ))}
           </div>
 
-          {/* Course Grid */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
             {[
               {
@@ -211,8 +204,6 @@ export default function SearchPage() {
             ))}
           </div>
 
-
-          {/* Pagination */}
           <div className="flex justify-center items-center gap-2">
             <button className="w-10 h-10 flex items-center justify-center border border-gray-300 rounded-lg hover:bg-gray-50">
               ‹

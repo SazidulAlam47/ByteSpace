@@ -26,7 +26,6 @@ import TestimonialCard from "../../../components/TestimonialCard";
 export default function InstructorSection() {
   return (
     <>
-      {/* Create & Manage Courses Section */}
       <section className="py-20 bg-white">
         <div className="max-w-[1200px] mx-auto px-8">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
@@ -37,7 +36,6 @@ export default function InstructorSection() {
                 className="w-full h-auto relative z-10"
               />
 
-              {/* Floating Course Card */}
               <div className="absolute bottom-[10%] right-[-40px] bg-[#0E52FF] text-white rounded-2xl p-4 shadow-xl">
                 <div className="text-sm font-medium mb-2" style={{ fontFamily: '"Satoshi", sans-serif' }}>
                   My Courses
@@ -69,7 +67,6 @@ export default function InstructorSection() {
                 ByteSpace supports instructors in creating or editing their courses, publishing them on our platform, and managing subscribers with ease.
               </p>
 
-              {/* Features List */}
               <div className="space-y-4">
                 <div className="flex items-start gap-3">
                   <div className="w-6 h-6 bg-[#CBFC01] rounded-full flex items-center justify-center flex-shrink-0 mt-1">

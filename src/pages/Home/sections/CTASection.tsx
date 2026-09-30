@@ -26,9 +26,7 @@ import TestimonialCard from "../../../components/TestimonialCard";
 export default function CTASection() {
   return (
     <>
-      {/* CTA Section */}
       <section className="relative bg-[#0043FF] py-20 overflow-hidden">
-        {/* Background Pattern */}
         <div className="absolute inset-0 opacity-10">
           <div
             className="absolute top-0 left-0 w-full h-full"

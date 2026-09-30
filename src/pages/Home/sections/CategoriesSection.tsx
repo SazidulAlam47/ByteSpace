@@ -26,14 +26,12 @@ export default function CategoriesSection() {
           </p>
         </div>
 
-        {/* Category Icons Grid */}
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6 mb-12">
           {CATEGORIES.map((cat, idx) => (
             <CategoryCard key={idx} icon={cat.icon} title={cat.title} />
           ))}
         </div>
 
-        {/* Start Learning Button */}
         <div className="text-center">
           <button
             className="px-8 py-4 bg-[#CBFC01] text-[#0E1116] font-bold rounded-full hover:bg-[#b8e301] transition-all"

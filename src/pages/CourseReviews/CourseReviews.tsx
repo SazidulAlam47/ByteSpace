@@ -5,7 +5,6 @@ import { avatar_2_b44979e1, avatar_3_3fe55918, avatar_4_0577f0e9, avatar_5_d0cd3
 export default function CourseReviews() {
   return (
     <div className="min-h-screen bg-white">
-      {/* Course Hero Section */}
       <section className="bg-[#0043FF] pb-16">
         
         <div className="pt-8 max-w-[1200px] mx-auto px-8">
@@ -46,13 +45,10 @@ export default function CourseReviews() {
         </div>
       </section>
 
-      {/* Main Content */}
       <section className="py-16">
         <div className="max-w-[1200px] mx-auto px-8">
           <div className="grid lg:grid-cols-3 gap-12">
-            {/* Left Column - Reviews Content */}
             <div className="lg:col-span-2">
-              {/* Video Preview */}
               <div className="mb-8 rounded-3xl overflow-hidden bg-gray-100 relative aspect-video">
                 <img
                   src={frame_542}
@@ -68,7 +64,6 @@ export default function CourseReviews() {
                 </button>
               </div>
 
-              {/* Tabs */}
               <div className="flex gap-2 mb-8 border-b border-gray-200">
                 <Link
                   to="/course/details"
@@ -92,7 +87,6 @@ export default function CourseReviews() {
                 </button>
               </div>
 
-              {/* What Learners Are Saying */}
               <div className="mb-12">
                 <h2
                   className="text-2xl font-bold mb-4"
@@ -109,7 +103,6 @@ export default function CourseReviews() {
                   transformative journey of mastering digital asset creation.
                 </p>
 
-                {/* Rating Summary */}
                 <div className="flex gap-8 items-start mb-12">
                   <div className="bg-[#CBFC01] rounded-3xl p-8 text-center">
                     <div
@@ -154,7 +147,6 @@ export default function CourseReviews() {
                 </div>
               </div>
 
-              {/* Individual Reviews */}
               <div>
                 <h3
                   className="text-xl font-bold mb-6"
@@ -163,7 +155,6 @@ export default function CourseReviews() {
                   Individual Reviews:
                 </h3>
 
-                {/* Filter Buttons */}
                 <div className="flex gap-2 mb-8 flex-wrap">
                   <button
                     className="px-6 py-2 bg-[#CBFC01] text-black font-medium rounded-full"
@@ -182,7 +173,6 @@ export default function CourseReviews() {
                   ))}
                 </div>
 
-                {/* Review Cards */}
                 <div className="space-y-6">
                   {[
                     {
@@ -265,7 +255,6 @@ export default function CourseReviews() {
               </div>
             </div>
 
-            {/* Right Column - Course Info Card */}
             <div className="lg:col-span-1">
               <div className="bg-white rounded-3xl p-6 shadow-xl sticky top-24">
                 <div className="mb-6">
@@ -346,7 +335,6 @@ export default function CourseReviews() {
                   </div>
                 </div>
 
-                {/* Instructor */}
                 <div className="border-t border-gray-200 pt-6">
                   <div className="flex items-center gap-3 mb-3">
                     <img

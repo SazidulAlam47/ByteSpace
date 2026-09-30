@@ -20,7 +20,6 @@ export default function TestimonialsSection() {
           </h2>
         </div>
 
-        {/* Testimonial Cards */}
         <div className="grid md:grid-cols-3 gap-8">
           {TESTIMONIALS.map((testimonial, idx) => (
             <TestimonialCard key={idx} {...testimonial} />

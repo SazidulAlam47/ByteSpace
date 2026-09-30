@@ -24,7 +24,6 @@ const router = createBrowserRouter([
         ],
     },
     {
-        // Standalone layout for auth pages
         element: <div className="min-h-screen bg-[#0E1116]"><Outlet /></div>,
         children: [
             { path: "/login", element: <Login /> },

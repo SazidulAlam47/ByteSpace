@@ -11,9 +11,7 @@ import {
 export default function HeroSection() {
     return (
         <>
-            {/* Hero Section */}
             <section className="relative bg-[#0043FF] min-h-[1024px] overflow-hidden">
-                {/* Background Grid Pattern */}
                 <div className="absolute inset-0 opacity-10">
                     <div
                         className="absolute top-0 left-0 w-full h-full"
@@ -25,7 +23,6 @@ export default function HeroSection() {
                     ></div>
                 </div>
 
-                {/* Decorative Background Ellipse */}
                 <div
                     className="absolute top-[-200px] left-1/2 -translate-x-1/2 w-[1149px] h-[1149px] rounded-full"
                     style={{
@@ -34,7 +31,6 @@ export default function HeroSection() {
                     }}
                 ></div>
 
-                {/* Decorative 3D Shapes */}
                 <img
                     src={cone_01_1}
                     alt="3D Cone"
@@ -46,9 +42,7 @@ export default function HeroSection() {
                     className="absolute bottom-[150px] right-[150px] w-[120px] opacity-60"
                 />
 
-                {/* Content Container */}
                 <div className="relative z-10 max-w-[1200px] mx-auto px-8">
-                    {/* Hero Content */}
                     <div className="pt-[80px] pb-[100px]">
                         <div className="max-w-3xl mx-auto text-center">
                             <h1
@@ -74,7 +68,6 @@ export default function HeroSection() {
                                 courses.
                             </p>
 
-                            {/* Search Bar */}
                             <div className="flex gap-3 max-w-2xl mx-auto mb-12">
                                 <div className="flex-1 flex items-center gap-2 bg-white rounded-full px-6 py-2 border-none focus-within:ring-2 focus-within:ring-[#CBFC01]">
                                     <svg
@@ -118,7 +111,6 @@ export default function HeroSection() {
                                 </button>
                             </div>
 
-                            {/* Hero Image - Person with Tablet */}
                             <div className="relative max-w-xl mx-auto">
                                 <img
                                     src={image_16_6be36b89}
@@ -126,7 +118,6 @@ export default function HeroSection() {
                                     className="w-full h-auto relative z-10"
                                 />
 
-                                {/* Floating Stats Card - Student Progress */}
                                 <div className="absolute top-[20%] left-[-80px] bg-white rounded-2xl p-4 shadow-xl z-20">
                                     <div className="flex items-center gap-2 mb-2">
                                         <img
@@ -158,7 +149,6 @@ export default function HeroSection() {
                                     </div>
                                 </div>
 
-                                {/* Floating Happy Students Card */}
                                 <div className="absolute bottom-[10%] left-[-100px] bg-white rounded-2xl p-4 shadow-xl">
                                     <div className="flex justify-between items-start mb-2">
                                         <div>

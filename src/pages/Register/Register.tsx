@@ -4,7 +4,6 @@ import { bytespace_logo, frame_209, frame_235, cone_01_1, cone_01_2 } from "../.
 export default function Register() {
   return (
     <div className="min-h-screen bg-[#0043FF] relative overflow-hidden">
-      {/* Background Grid Pattern */}
       <div className="absolute inset-0 opacity-10">
         <div className="absolute top-0 left-0 w-full h-full"
              style={{
@@ -14,11 +13,9 @@ export default function Register() {
         </div>
       </div>
 
-      {/* Decorative Cones */}
       <img src={cone_01_1} alt="" className="absolute top-[10%] right-[60%] w-[120px] opacity-80 z-0 pointer-events-none" />
       <img src={cone_01_2} alt="" className="absolute bottom-[20%] left-[5%] w-[100px] opacity-80 z-0 pointer-events-none" />
 
-      {/* Logo */}
       <Link to="/" className="absolute top-8 left-8 z-50 flex items-center gap-2">
         <img src={bytespace_logo} alt="ByteSpace" className="w-[29px] h-[32px]" />
         <span
@@ -31,7 +28,6 @@ export default function Register() {
 
       <div className="relative z-10 flex items-center justify-center min-h-screen px-8 py-12">
         <div className="w-full max-w-6xl flex items-center gap-16">
-          {/* Left Side - Marketing Content */}
           <div className="flex-1 hidden lg:block">
             <h2 className="text-white font-bold mb-4 max-w-md"
                 style={{ fontSize: '36px', lineHeight: '1.2', fontFamily: '"Clash Display", sans-serif' }}>
@@ -42,9 +38,7 @@ export default function Register() {
               The registration process is straightforward, uncomplicated, and efficient, allowing users to sign up quickly, easily, and at no cost
             </p>
 
-            {/* Course Cards Preview */}
             <div className="relative">
-              {/* Decorative course card mockups */}
               <div className="space-y-6">
                 <img src={frame_209} alt="Course Preview" className="w-[300px] rounded-2xl shadow-xl transform -rotate-6 z-10 relative" />
                 <img src={frame_235} alt="Course Preview" className="w-[300px] rounded-2xl shadow-xl transform rotate-3 ml-12 z-0 relative -mt-16" />
@@ -52,7 +46,6 @@ export default function Register() {
             </div>
           </div>
 
-          {/* Right Side - Register Form */}
           <div className="flex-1 max-w-md w-full">
             <div className="bg-white rounded-3xl p-8 shadow-2xl">
               <div className="mb-8">
@@ -66,7 +59,6 @@ export default function Register() {
               </div>
 
               <form className="space-y-6">
-                {/* Full Name Input */}
                 <div>
                   <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-2"
                          style={{ fontFamily: '"Satoshi", sans-serif' }}>
@@ -81,7 +73,6 @@ export default function Register() {
                   />
                 </div>
 
-                {/* Email Input */}
                 <div>
                   <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-2"
                          style={{ fontFamily: '"Satoshi", sans-serif' }}>
@@ -96,7 +87,6 @@ export default function Register() {
                   />
                 </div>
 
-                {/* Password Input */}
                 <div>
                   <label htmlFor="password" className="block text-sm font-medium text-gray-700 mb-2"
                          style={{ fontFamily: '"Satoshi", sans-serif' }}>
@@ -111,7 +101,6 @@ export default function Register() {
                   />
                 </div>
 
-                {/* Continue Button */}
                 <button
                   type="submit"
                   className="w-full py-4 bg-[#CBFC01] text-[#0E1116] font-bold rounded-full hover:bg-[#b8e301] transition-all transform hover:scale-[1.02]"
@@ -120,7 +109,6 @@ export default function Register() {
                   Continue
                 </button>
 
-                {/* Sign In Link */}
                 <p className="text-center text-sm text-gray-600" style={{ fontFamily: '"Satoshi", sans-serif' }}>
                   Already have an account?{" "}
                   <Link to="/login" className="text-[#0043FF] font-medium hover:underline">

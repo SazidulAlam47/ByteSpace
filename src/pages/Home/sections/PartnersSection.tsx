@@ -26,7 +26,6 @@ import TestimonialCard from "../../../components/TestimonialCard";
 export default function PartnersSection() {
   return (
     <>
-      {/* Logo Partners Section */}
       <section className="bg-[#F8F9FA] py-12">
         <div className="max-w-[1200px] mx-auto px-8">
           <div className="flex items-center justify-between gap-12 opacity-40">

@@ -27,7 +27,6 @@ export default function DiscoverSection() {
           </p>
         </div>
 
-        {/* Categories Bar */}
         <div className="flex flex-wrap items-center justify-between gap-4 mb-12 border-b border-gray-200 pb-4">
           <div className="flex gap-8 overflow-x-auto pb-2 -mb-[18px]">
             {['All', 'Design', 'Development', 'IT & Business'].map((tab, idx) => (
@@ -42,14 +41,12 @@ export default function DiscoverSection() {
           </div>
         </div>
 
-        {/* Course Grid */}
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
           {COURSES.map((course, idx) => (
             <CourseCard key={idx} {...course} />
           ))}
         </div>
 
-        {/* View All Button */}
         <div className="text-center">
           <button
             className="px-8 py-4 border-2 border-[#0E1116] text-[#0E1116] font-bold rounded-full hover:bg-[#0E1116] hover:text-white transition-all"

@@ -5,7 +5,6 @@ import { avatar_2_b44979e1, frame_542 } from "../../assets";
 export default function CourseDetails() {
   return (
     <div className="min-h-screen bg-white">
-      {/* Course Hero Section */}
       <section className="bg-[#0043FF] pb-16">
         
         <div className="pt-8 max-w-[1200px] mx-auto px-8">
@@ -46,13 +45,10 @@ export default function CourseDetails() {
         </div>
       </section>
 
-      {/* Main Content */}
       <section className="py-16">
         <div className="max-w-[1200px] mx-auto px-8">
           <div className="grid lg:grid-cols-3 gap-12">
-            {/* Left Column - Course Content */}
             <div className="lg:col-span-2">
-              {/* Video Preview */}
               <div className="mb-8 rounded-3xl overflow-hidden bg-gray-100 relative aspect-video">
                 <img
                   src={frame_542}
@@ -68,7 +64,6 @@ export default function CourseDetails() {
                 </button>
               </div>
 
-              {/* Tabs */}
               <div className="flex gap-2 mb-8 border-b border-gray-200">
                 <button
                   className="px-6 py-3 bg-[#CBFC01] text-black font-medium rounded-t-xl"
@@ -92,7 +87,6 @@ export default function CourseDetails() {
                 </Link>
               </div>
 
-              {/* Description */}
               <div className="mb-12">
                 <h2
                   className="text-2xl font-bold mb-4"
@@ -127,7 +121,6 @@ export default function CourseDetails() {
                 </div>
               </div>
 
-              {/* Sneak Peak */}
               <div className="mb-12">
                 <h2
                   className="text-2xl font-bold mb-6"
@@ -148,7 +141,6 @@ export default function CourseDetails() {
                 </div>
               </div>
 
-              {/* Key Points */}
               <div>
                 <h2
                   className="text-2xl font-bold mb-6"
@@ -185,7 +177,6 @@ export default function CourseDetails() {
               </div>
             </div>
 
-            {/* Right Column - Course Info Card */}
             <div className="lg:col-span-1">
               <div className="bg-white rounded-3xl p-6 shadow-xl sticky top-24">
                 <div className="mb-6">
@@ -266,7 +257,6 @@ export default function CourseDetails() {
                   </div>
                 </div>
 
-                {/* Instructor */}
                 <div className="border-t border-gray-200 pt-6">
                   <div className="flex items-center gap-3 mb-3">
                     <img

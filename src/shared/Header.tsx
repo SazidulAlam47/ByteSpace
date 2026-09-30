@@ -6,7 +6,6 @@ const Header = () => {
         <header className="w-full h-[120px] flex items-center relative z-50 bg-[#0043FF]">
             <div className="w-full max-w-[1440px] mx-auto px-[122px] flex items-center justify-between relative">
                 
-                {/* Logo Section */}
                 <Link to="/" className="flex items-center gap-[8px]">
                     <img src={bytespace_logo} alt="ByteSpace Icon" className="w-[29px] h-[32px]" />
                     <span 
@@ -17,7 +16,6 @@ const Header = () => {
                     </span>
                 </Link>
 
-                {/* Centered Navigation */}
                 <nav className="absolute left-1/2 -translate-x-1/2 flex items-center gap-6">
                     <Link 
                         to="/" 
@@ -42,7 +40,6 @@ const Header = () => {
                     </Link>
                 </nav>
 
-                {/* Right Navigation & Menu Icon */}
                 <div className="flex items-center gap-6">
                     <Link 
                         to="/login" 

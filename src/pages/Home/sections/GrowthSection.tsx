@@ -26,7 +26,6 @@ import TestimonialCard from "../../../components/TestimonialCard";
 export default function GrowthSection() {
   return (
     <>
-      {/* Professional Growth Section */}
       <section className="py-20 bg-[#0E1116]">
         <div className="max-w-[1200px] mx-auto px-8">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
@@ -48,7 +47,6 @@ export default function GrowthSection() {
                 Explore our curated selection of courses tailored to enhance your capabilities and accelerate your career journey. Whether you are looking to sharpen specific skills, gain industry expertise, or embark on a new career path entirely, we have the resources you need.
               </p>
 
-              {/* Stats */}
               <div className="grid grid-cols-3 gap-6">
                 <div>
                   <div
@@ -93,7 +91,6 @@ export default function GrowthSection() {
                 className="w-full h-auto relative z-10"
               />
 
-              {/* Floating Stats Card */}
               <div className="absolute top-[20%] right-[-40px] bg-white rounded-2xl p-4 shadow-xl">
                 <div className="text-3xl font-bold text-[#0E52FF] mb-2" style={{ fontFamily: '"Clash Display", sans-serif' }}>
                   55%

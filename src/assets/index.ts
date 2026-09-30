@@ -1,6 +1,4 @@
-// Auto-generated assets index from Figma "ByteSpace New Check website" ("Design" canvas)
 
-// --- Images (38) ---
 export { default as img_3d_shape_14_8670b841 } from "./images/3d-shape-14-8670b841.png";
 export { default as img_3d_shape_15_f9c0e0fd } from "./images/3d-shape-15-f9c0e0fd.png";
 export { default as img_3d_shape_35_92fc70a3 } from "./images/3d-shape-35-92fc70a3.png";
@@ -40,7 +38,6 @@ export { default as image_33_29a52a24 } from "./images/image-33-29a52a24.png";
 export { default as image_34_cda676fe } from "./images/image-34-cda676fe.png";
 export { default as image_36_0d6596fb } from "./images/image-36-0d6596fb.png";
 
-// --- SVGs & Icons (33) ---
 export { default as auto_layout_horizontal_style_filled_1 } from "./icons/auto_layout_horizontal-style_filled-1.svg";
 export { default as auto_layout_horizontal_style_filled_2 } from "./icons/auto_layout_horizontal-style_filled-2.svg";
 export { default as auto_layout_horizontal_style_filled_3 } from "./icons/auto_layout_horizontal-style_filled-3.svg";
@@ -75,7 +72,6 @@ export { default as vector_1 } from "./icons/vector-1.svg";
 export { default as vector_2 } from "./icons/vector-2.svg";
 export { default as vector } from "./icons/vector.svg";
 
-// --- Figma-export assets (course card previews, cones, hero images) ---
 export { default as frame_69 } from "./frame-69.png";
 export { default as frame_95 } from "./frame-95.png";
 export { default as frame_209 } from "./frame-209.png";

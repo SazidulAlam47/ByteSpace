@@ -4,7 +4,6 @@ import { bytespace_logo, frame_69, frame_95, avatar_2_b44979e1, avatar_3_3fe5591
 export default function Login() {
   return (
     <div className="min-h-screen bg-[#0043FF] relative overflow-hidden">
-      {/* Background Grid Pattern */}
       <div className="absolute inset-0 opacity-10">
         <div className="absolute top-0 left-0 w-full h-full"
              style={{
@@ -14,11 +13,9 @@ export default function Login() {
         </div>
       </div>
 
-      {/* Decorative Cones */}
       <img src={cone_01_1} alt="" className="absolute top-[10%] right-[60%] w-[120px] opacity-80 z-0 pointer-events-none" />
       <img src={cone_01_2} alt="" className="absolute bottom-[20%] left-[5%] w-[100px] opacity-80 z-0 pointer-events-none" />
 
-      {/* Logo */}
       <Link to="/" className="absolute top-8 left-8 z-50 flex items-center gap-2">
         <img src={bytespace_logo} alt="ByteSpace" className="w-[29px] h-[32px]" />
         <span
@@ -31,7 +28,6 @@ export default function Login() {
 
       <div className="relative z-10 flex items-center justify-center min-h-screen px-8 py-12">
         <div className="w-full max-w-6xl flex items-center gap-16">
-          {/* Left Side - Marketing Content */}
           <div className="flex-1 hidden lg:block">
             <h2 className="text-white font-bold mb-4 max-w-md"
                 style={{ fontSize: '36px', lineHeight: '1.2', fontFamily: '"Clash Display", sans-serif' }}>
@@ -42,14 +38,11 @@ export default function Login() {
               Experience a seamless and efficient sign-in process that grants you instant access to a world of knowledge.
             </p>
 
-            {/* Course Cards Preview */}
             <div className="relative">
-              {/* Decorative course card mockups */}
               <div className="space-y-6 relative">
                 <img src={frame_69} alt="Course Preview" className="w-[300px] rounded-2xl shadow-xl transform -rotate-6 z-10 relative" />
                 <img src={frame_95} alt="Course Preview" className="w-[300px] rounded-2xl shadow-xl transform rotate-3 ml-12 z-0 relative -mt-16" />
                 
-                {/* Floating Happy Students Card */}
                 <div className="absolute top-1/2 -right-12 transform -translate-y-1/2 bg-white rounded-2xl p-4 shadow-xl z-20 hidden xl:block">
                   <div className="flex justify-between items-start mb-2">
                     <div>
@@ -76,7 +69,6 @@ export default function Login() {
             </div>
           </div>
 
-          {/* Right Side - Login Form */}
           <div className="flex-1 max-w-md w-full">
             <div className="bg-white rounded-3xl p-8 shadow-2xl">
               <div className="mb-8">
@@ -90,7 +82,6 @@ export default function Login() {
               </div>
 
               <form className="space-y-6">
-                {/* Email Input */}
                 <div>
                   <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-2"
                          style={{ fontFamily: '"Satoshi", sans-serif' }}>
@@ -105,7 +96,6 @@ export default function Login() {
                   />
                 </div>
 
-                {/* Password Input */}
                 <div>
                   <label htmlFor="password" className="block text-sm font-medium text-gray-700 mb-2"
                          style={{ fontFamily: '"Satoshi", sans-serif' }}>
@@ -120,7 +110,6 @@ export default function Login() {
                   />
                 </div>
 
-                {/* Sign In Button */}
                 <button
                   type="submit"
                   className="w-full py-4 bg-[#CBFC01] text-[#0E1116] font-bold rounded-full hover:bg-[#b8e301] transition-all transform hover:scale-[1.02]"
@@ -129,7 +118,6 @@ export default function Login() {
                   Sign In
                 </button>
 
-                {/* Divider */}
                 <div className="relative">
                   <div className="absolute inset-0 flex items-center">
                     <div className="w-full border-t border-gray-300"></div>
@@ -139,7 +127,6 @@ export default function Login() {
                   </div>
                 </div>
 
-                {/* Social Login */}
                 <div className="flex gap-4">
                   <button
                     type="button"
@@ -162,7 +149,6 @@ export default function Login() {
                   </button>
                 </div>
 
-                {/* Sign Up Link */}
                 <p className="text-center text-sm text-gray-600" style={{ fontFamily: '"Satoshi", sans-serif' }}>
                   New user?{" "}
                   <Link to="/register" className="text-[#0043FF] font-medium hover:underline">

@@ -5,11 +5,9 @@ import { bytespace_logo } from "../assets";
 export default function Footer() {
   return (
     <>
-      {/* Footer */}
       <footer className="bg-white py-16 border-t border-gray-200">
         <div className="max-w-[1200px] mx-auto px-8">
           <div className="grid grid-cols-1 md:grid-cols-5 gap-12 mb-12">
-            {/* Newsletter */}
             <div className="md:col-span-2">
               <div className="flex items-center gap-2 mb-4">
                 <img src={bytespace_logo} alt="ByteSpace" className="w-[24px] h-[26px]" />
@@ -39,7 +37,6 @@ export default function Footer() {
               </p>
             </div>
 
-            {/* Featured Courses */}
             <div>
               <h3 className="font-bold mb-4" style={{ fontFamily: '"Satoshi", sans-serif' }}>
                 Featured Courses
@@ -68,7 +65,6 @@ export default function Footer() {
               </ul>
             </div>
 
-            {/* Development */}
             <div>
               <h3 className="font-bold mb-4" style={{ fontFamily: '"Satoshi", sans-serif' }}>
                 Development
@@ -97,7 +93,6 @@ export default function Footer() {
               </ul>
             </div>
 
-            {/* Become a Creator */}
             <div>
               <h3 className="font-bold mb-4" style={{ fontFamily: '"Satoshi", sans-serif' }}>
                 Become a Creator
@@ -127,7 +122,6 @@ export default function Footer() {
             </div>
           </div>
 
-          {/* Bottom Bar */}
           <div className="border-t border-gray-200 pt-8 flex flex-col md:flex-row justify-between items-center text-sm text-gray-600">
             <p style={{ fontFamily: '"Satoshi", sans-serif' }}>© 2023 ByteSpace. All rights reserved.</p>
             <div className="flex gap-6 mt-4 md:mt-0">
